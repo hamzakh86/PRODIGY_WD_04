@@ -1,0 +1,242 @@
+/* Responsive Enhancements */
+
+/* Scrollbar Hide Utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Grid Pattern Background */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 640px) {
+  /* Hero Section */
+  .hero-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Experience Cards */
+  .experience-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .experience-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  /* Technology Grid */
+  .tech-grid-mobile {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .tech-item-mobile {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    width: 5rem;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-image {
+    height: 12rem;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    padding: 1rem;
+  }
+  
+  .contact-input {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Hero Section */
+  .hero-content {
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  /* Experience Timeline */
+  .experience-timeline {
+    padding: 0 1rem;
+  }
+  
+  /* Technology Grid */
+  .tech-grid-tablet {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* Project Grid */
+  .project-grid-tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop Optimizations */
+@media (min-width: 1025px) {
+  /* Hero Section */
+  .hero-content {
+    padding: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  /* Experience Timeline */
+  .experience-timeline-desktop {
+    position: relative;
+  }
+  
+  .experience-item-left {
+    margin-right: 50%;
+    padding-right: 2rem;
+  }
+  
+  .experience-item-right {
+    margin-left: 50%;
+    padding-left: 2rem;
+  }
+  
+  /* Technology Grid */
+  .tech-grid-desktop {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Project Grid */
+  .project-grid-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.glow-animation {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Touch Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .hover-effect {
+    transform: none !important;
+  }
+  
+  .tech-item:active {
+    transform: scale(0.95);
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .tech-icon {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark Mode Enhancements */
+@media (prefers-color-scheme: dark) {
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-before: always;
+  }
+}
+
