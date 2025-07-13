@@ -185,55 +185,71 @@ const App = () => {
   ];
 
   const projects = [
-    {
-      name: "Full Stack React Native App",
-      description: "Self-learning Project – Developed with React Native, Animatable, and Appwrite. The app enables seamless AI video sharing, emphasizing design and functionality.",
-      technologies: ["React Native", "Expo", "Nativewind", "Animatable", "Appwrite"],
-      github: "https://github.com/hamzakh86/AI-video-sharing",
-      demo: "https://ai-video-sharing-demo.netlify.app",
-      image: "/src/assets/project-react-native.png"
-    },
-    {
-      name: "E-Commerce Website",
-      description: "Developed a full-stack e-commerce platform with Next.js 14, featuring an admin dashboard and CMS for managing products, users, and orders. The platform supports secure payments via Stripe and is optimized for scalability.",
-      technologies: ["Next.js", "GraphQL", "TypeScript", "Stripe"],
-      github: "https://github.com/hamzakh86/E-commerce-Admin-Dashboard",
-      demo: "https://ecommerce-admin-demo.vercel.app",
-      image: "/src/assets/project-ecommerce.png"
-    },
-    {
-      name: "A Modern Real Estate",
-      description: "Built a real estate marketplace using the MERN stack, with features like property listing management (CRUD), image uploads, and advanced search functionality.",
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Redux Toolkit"],
-      github: "https://github.com/hamzakh86/A-modern-real-estate-",
-      demo: "https://modern-real-estate-demo.netlify.app",
-      image: "/src/assets/project-realestate.png"
-    },
-    {
-      name: "Food Delivery",
-      description: "Developed a comprehensive food delivery web application utilizing Microservice Architecture, featuring distinct applications for Admin, User, Restaurant Owner, and Delivery Personnel.",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      github: "https://github.com/hamzakh86/Food-Delivery",
-      demo: "https://food-delivery-demo.vercel.app",
-      image: "/src/assets/project-fooddelivery.png"
-    },
-    {
-      name: "Portfolio Website",
-      description: "Designed a responsive portfolio website using Three.js for 3D models and Framer Motion for interactivity. Ensured performance optimization and cross-device compatibility.",
-      technologies: ["React.js", "Three.js", "TailwindCSS", "Framer Motion"],
-      github: "https://github.com/hamzakh86/portfolio",
-      demo: "https://hamza-portfolio-demo.netlify.app",
-      image: "/src/assets/project-portfolio.png"
-    },
-    {
-      name: "Chat Application",
-      description: "Developed a real-time chat application using the MERN stack, featuring online indicators, file uploads/attachments, and auto-scrolling for user messages.",
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "WebSockets"],
-      github: "https://github.com/hamzakh86/Chat-app",
-      demo: "https://chat-app-demo.herokuapp.com",
-      image: "/src/assets/project-chat.png"
-    }
-  ];
+  {
+    name: "E-Commerce Website",
+    description: "Complete e-commerce platform with admin dashboard, PayPal payment system, and product management. Features secure authentication and advanced search functionality.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
+    github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
+    demo: "https://ecommerce-demo-hamza.netlify.app",
+    image: "/src/assets/project1.png"
+  },
+  {
+    name: "Project Management Website (TeamSpace)",
+    description: "Trello-inspired task management application with real-time collaboration features. Allows creation of customizable workspaces and deadline tracking.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
+    github: "https://github.com/hamzakh86/codealpha-teamspace",
+    demo: "https://teamspace-demo.netlify.app",
+    image: "/src/assets/project2.png"
+  },
+  {
+    name: "Social Media Website (SocialWave)",
+    description: "Complete social network with posts, comments, and likes system. Features user following functionality and content moderation tools.",
+    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
+    github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
+    demo: "https://socialwave-demo.herokuapp.com",
+    image: "/src/assets/project3.png"
+  },
+  {
+    name: "Modern Real Estate Marketplace",
+    description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
+    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
+    github: "https://github.com/hamzakh86/A-modern-real-estate-",
+    demo: "https://modern-real-estate-demo.netlify.app",
+    image: "/src/assets/project4.png"
+  },
+  {
+    name: "Portfolio Website",
+    description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
+    technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
+    github: "https://github.com/hamzakh86/PRODIGY_WD_04",
+    demo: "https://hamza-portfolio-demo.netlify.app",
+    image: "/src/assets/project5.png"
+  },
+  {
+    name: "Responsive Landing Page (AI Revolution)",
+    description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
+    technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
+    github: "https://github.com/hamzakh86/PRODIGY_WD_01",
+    demo: "https://ai-revolution-demo.netlify.app",
+    image: "/src/assets/project6.png"
+  },
+  {
+    name: "Stopwatch Web Application (Chrono Elite Pro)",
+    description: "Professional stopwatch with lap system, advanced statistics, and CSV export. Supports keyboard shortcuts and hundredth-second precision.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/hamzakh86/PRODIGY_WD_02",
+    demo: "https://chrono-elite-pro.netlify.app",
+    image: "/src/assets/project7.png"
+  },
+  {
+    name: "Tic-Tac-Toe Web Application",
+    description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
+    github: "https://github.com/hamzakh86/PRODIGY_WD_03",
+    demo: "https://tic-tac-toe-ai-demo.netlify.app",
+    image: "/src/assets/project8.png"
+  },
+];
 
   const certifications = [
     {
@@ -242,52 +258,52 @@ const App = () => {
       link: "https://diploma.gomycode.app/?id=31705411332830853",
       image: certification1
     },
-    {
-      title: "SCRUMstudy",
-      description: "Scrum for Ops and DevOps Fundamentals",
-      link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
-      image: certification2
+        {
+      title: "freeCodeCamp",
+      description: "Back End Development and APIs",
+      link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
+      image: certification5
     },
-    {
-      title: "Certifprof",
-      description: "Scrum Foundation Professional Certificate SFPC (v2020)",
-      image: certification3
+        {
+      title: "Postman",
+      description: "Postman API Fundamentals Student Expert",
+      link: "https://badgr.com/print-certificate/66a41b7a1ea7d93715e019af",
+      image: certification6
     },
     {
       title: "freeCodeCamp",
       description: "Responsive Web Design",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/responsive-web-design",
-      image: certification4
+      image: certification2
     },
     {
       title: "freeCodeCamp",
       description: "JavaScript Algorithms and Data Structures (Beta)",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/javascript-algorithms-and-data-structures-v8",
-      image: certification5
+      image: certification3
     },
     {
       title: "freeCodeCamp",
       description: "Front End Development Libraries",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/front-end-development-libraries",
-      image: certification6
+      image: certification4
     },
     {
-      title: "freeCodeCamp",
-      description: "Back End Development and APIs",
-      link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
-      image: certification7
+    title: "SCRUMstudy",
+    description: "Scrum for Ops and DevOps Fundamentals",
+    link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
+    image: certification8
     },
-    {
-      title: "Postman",
-      description: "Postman API Fundamentals Student Expert",
-      link: "https://badgr.com/backpack/badges/66a41b7a1ea7d93715e019af",
-      image: certification8
-    },
-    {
+   {
       title: "SCRUMstudy",
       description: "Scrum Fundamentals Certified (SFC)",
       link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1036406",
       image: certification9
+    },
+   {
+    title: "Certifprof",
+    description: "Scrum Foundation Professional Certificate SFPC (v2020)",
+    image: certification7
     }
   ];
 
@@ -1301,7 +1317,7 @@ const App = () => {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://linkedin.com/in/hamza-khaled', '_blank')}
+                    onClick={() => window.open('https://www.linkedin.com/in/hamza-khaled-16a114290/', '_blank')}
                     className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
                   >
                     <Linkedin className="w-6 h-6 text-primary" />
@@ -1311,7 +1327,7 @@ const App = () => {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://instagram.com/hamza.khaled', '_blank')}
+                    onClick={() => window.open('https://www.instagram.com/hamzakhaledofficial86/', '_blank')}
                     className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
                   >
                     <Instagram className="w-6 h-6 text-primary" />
@@ -1321,7 +1337,7 @@ const App = () => {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://facebook.com/hamza.khaled', '_blank')}
+                    onClick={() => window.open('https://www.facebook.com/hamzakhaledofficial86/', '_blank')}
                     className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
                   >
                     <Facebook className="w-6 h-6 text-primary" />
@@ -1331,7 +1347,7 @@ const App = () => {
                   <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://wa.me/+21612345678', '_blank')}
+                    onClick={() => window.open('https://wa.me/21625178855', '_blank')}
                     className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
                   >
                     <Phone className="w-6 h-6 text-primary" />
