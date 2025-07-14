@@ -364,6 +364,20 @@ const App = () => {
     }
   }, [isDarkMode]);
 
+  useEffect(() => {
+    // Gérer le scroll du body quand le menu mobile est ouvert
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+
+    // Nettoyer au démontage du composant
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMenuOpen]);
+
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -503,6 +517,7 @@ const App = () => {
                 variant="ghost"
                 size="sm"
                 onClick={toggleDarkMode}
+                className="mobile-menu-button"
               >
                 {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
               </Button>
@@ -510,6 +525,9 @@ const App = () => {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="mobile-menu-button"
+                aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                aria-expanded={isMenuOpen}
               >
                 {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </Button>
@@ -523,17 +541,16 @@ const App = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-background border-t border-border"
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+              className="mobile-nav-menu"
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
-                      activeSection === item.id
-                        ? 'text-primary bg-accent'
-                        : 'text-muted-foreground hover:text-primary'
+                    className={`mobile-nav-item ${
+                      activeSection === item.id ? 'active' : ''
                     }`}
                   >
                     <item.icon className="inline-block w-4 h-4 mr-2" />
