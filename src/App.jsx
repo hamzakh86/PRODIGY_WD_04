@@ -58,7 +58,6 @@ import gitLogo from './assets/git.webp';
 import nextLogo from './assets/next.webp';
 import nestLogo from './assets/nest.webp';
 import './App.css';
-import './responsive.css';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -830,174 +829,166 @@ const App = () => {
         </div>
       </section>
 
-      <section id="technologies" className="py-20 bg-gradient-to-br from-background via-card to-background relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Technologies
-            </h2>
-            <p className="text-lg text-muted-foreground">Technologies I work with</p>
-          </motion.div>
+      <section id="technologies" className="py-20 bg-gradient-to-br from-background via-card to-background relative overflow-hidden overflow-x-hidden">
+  {/* Background Effects */}
+  <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+  <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
 
-          {/* Desktop Grid Layout */}
-          <div className="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-            {technologies.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
-                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: index * 0.1,
-                  type: "spring",
-                  stiffness: 100
-                }}
-                viewport={{ once: true }}
-                whileHover={{ 
-                  scale: 1.1, 
-                  rotateY: 15,
-                  z: 50
-                }}
-                className="group relative"
-              >
-                <div className={`relative w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${tech.color} p-0.5 shadow-2xl`}>
-                  <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center relative overflow-hidden">
-                    {/* Animated background */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
-                    
-                    {/* Glow effect */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
-                    
-                    {tech.icon ? (
-                      <img 
-                        src={tech.icon} 
-                        alt={tech.name}
-                        className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
-                      />
-                    ) : (
-                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-lg relative z-10`}>
-                        {tech.name.charAt(0)}
-                      </div>
-                    )}
-                    
-                    {/* Particle effect */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {[...Array(6)].map((_, i) => (
-                        <motion.div
-                          key={i}
-                          className={`absolute w-1 h-1 bg-gradient-to-r ${tech.color} rounded-full`}
-                          style={{
-                            left: `${20 + i * 10}%`,
-                            top: `${20 + i * 10}%`,
-                          }}
-                          animate={{
-                            scale: [0, 1, 0],
-                            opacity: [0, 1, 0],
-                          }}
-                          transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            delay: i * 0.2,
-                          }}
-                        />
-                      ))}
-                    </div>
-                  </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        Technologies
+      </h2>
+      <p className="text-lg text-muted-foreground">Technologies I work with</p>
+    </motion.div>
+
+    {/* Desktop Grid Layout */}
+    <div className="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+      {technologies.map((tech, index) => (
+        <motion.div
+          key={tech.name}
+          initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
+          whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: index * 0.1,
+            type: "spring",
+            stiffness: 100
+          }}
+          viewport={{ once: true }}
+          whileHover={{
+            scale: 1.1,
+            rotateY: 15,
+            z: 50
+          }}
+          className="group relative"
+        >
+          <div className={`relative w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${tech.color} p-0.5 shadow-2xl`}>
+            <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center relative overflow-hidden">
+              <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
+              {tech.icon ? (
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+                />
+              ) : (
+                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-lg relative z-10`}>
+                  {tech.name.charAt(0)}
                 </div>
-                
-                <motion.h3 
-                  className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  {tech.name}
-                </motion.h3>
-                
-                {/* Floating label on hover */}
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileHover={{ opacity: 1, y: 0 }}
-                  className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-foreground text-background px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap pointer-events-none"
-                >
-                  {tech.name}
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
-                </motion.div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Mobile Carousel Layout */}
-          <div className="md:hidden">
-            <div className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide">
-              {technologies.map((tech, index) => (
-                <motion.div
-                  key={tech.name}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                  className="flex-shrink-0 group"
-                >
-                  <div className={`relative w-20 h-20 mb-3 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
-                    <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
-                      <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
-                      
-                      {tech.icon ? (
-                        <img 
-                          src={tech.icon} 
-                          alt={tech.name}
-                          className="w-10 h-10 object-contain relative z-10"
-                        />
-                      ) : (
-                        <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
-                          {tech.name.charAt(0)}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xs font-medium text-center text-foreground w-20">
-                    {tech.name}
-                  </h3>
-                </motion.div>
-              ))}
+              )}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {[...Array(6)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className={`absolute w-1 h-1 bg-gradient-to-r ${tech.color} rounded-full`}
+                    style={{
+                      left: `${20 + i * 10}%`,
+                      top: `${20 + i * 10}%`,
+                    }}
+                    animate={{
+                      scale: [0, 1, 0],
+                      opacity: [0, 1, 0],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: i * 0.2,
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* Floating Animation Elements */}
-          <div className="absolute inset-0 pointer-events-none">
-            {[...Array(8)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-2 h-2 bg-primary/30 rounded-full"
-                style={{
-                  left: `${10 + i * 10}%`,
-                  top: `${20 + (i % 3) * 20}%`,
-                }}
-                animate={{
-                  y: [-20, 20, -20],
-                  opacity: [0.3, 0.8, 0.3],
-                }}
-                transition={{
-                  duration: 3 + i * 0.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+          <motion.h3
+            className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
+            whileHover={{ scale: 1.05 }}
+          >
+            {tech.name}
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileHover={{ opacity: 1, y: 0 }}
+            className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-foreground text-background px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap pointer-events-none"
+          >
+            {tech.name}
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
+          </motion.div>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Mobile Grid Layout */}
+    <div className="md:hidden px-4">
+      <div className="grid grid-cols-3 gap-6 justify-items-center">
+        {technologies.map((tech, index) => (
+          <motion.div
+            key={tech.name}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+            viewport={{ once: true }}
+            className="group"
+          >
+            <div className={`relative w-20 h-20 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
+              <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
+                {tech.icon ? (
+                  <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    className="w-10 h-10 object-contain relative z-10"
+                  />
+                ) : (
+                  <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
+                    {tech.name.charAt(0)}
+                  </div>
+                )}
+              </div>
+            </div>
+            <h3 className="text-xs font-medium text-center text-foreground w-20">
+              {tech.name}
+            </h3>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    {/* Floating Animation Elements */}
+    <div className="absolute inset-0 pointer-events-none">
+      {[...Array(8)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-2 h-2 bg-primary/30 rounded-full"
+          style={{
+            left: `${10 + i * 10}%`,
+            top: `${20 + (i % 3) * 20}%`,
+          }}
+          animate={{
+            y: [-20, 20, -20],
+            opacity: [0.3, 0.8, 0.3],
+          }}
+          transition={{
+            duration: 3 + i * 0.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section id="projects" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

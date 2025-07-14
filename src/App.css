@@ -49,7 +49,7 @@
   --portfolio-light-blue: #547792;
   --portfolio-accent-blue: #94B4C1;
   --portfolio-off-white: #ECEFEF;
-  
+
   --background: var(--portfolio-off-white);
   --foreground: var(--portfolio-dark-blue);
   --card: #ffffff;
@@ -120,9 +120,18 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    box-sizing: border-box;
   }
-  body {
+
+  html, body {
     @apply bg-background text-foreground;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
 
