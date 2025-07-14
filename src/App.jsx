@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { 
-  Menu, 
-  X, 
-  Github, 
-  ExternalLink, 
-  Mail, 
-  MapPin, 
+import {
+  Menu,
+  X,
+  Github,
+  ExternalLink,
+  Mail,
+  MapPin,
   Download,
   Code,
   Briefcase,
@@ -96,24 +96,17 @@ const App = () => {
   const services = [
     {
       title: "Full Stack JS Developer",
-      description: "End-to-end web application development using modern JavaScript technologies",
-      logo: "/src/assets/fullstack-logo.png"
-    },
+      description: "End-to-end web application development using modern JavaScript technologies",      logo: "/assets/fullstack-logo.png"  },
     {
       title: "Frontend Developer", 
-      description: "Creating responsive and interactive user interfaces with React.js and modern frameworks",
-      logo: "/src/assets/frontend-logo.png"
-    },
+      description: "Creating responsive and interactive user interfaces with React.js and modern frameworks"      logo: "/assets/frontend-logo.png"   },
     {
       title: "Backend Developer",
-      description: "Building robust server-side applications with Node.js, Express, and databases",
-      logo: "/src/assets/backend-logo.png"
-    },
+      description: "Building robust server-side applications with Node.js, Express, and databases"      logo: "/assets/backend-logo.png"   },
     {
       title: "React Native Developer",
       description: "Cross-platform mobile app development for iOS and Android",
-      logo: "/src/assets/react-native-logo.png"
-    }
+      logo: "/assets/react-native-logo.png" }
   ];
   
   const technologies = [
@@ -190,7 +183,7 @@ const App = () => {
     technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
     github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
     demo: "https://ecommerce-demo-hamza.netlify.app",
-    image: "/src/assets/project1.png"
+    image: "/assets/project1.png"
   },
   {
     name: "Project Management Website (TeamSpace)",
@@ -198,7 +191,7 @@ const App = () => {
     technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
     github: "https://github.com/hamzakh86/codealpha-teamspace",
     demo: "https://teamspace-demo.netlify.app",
-    image: "/src/assets/project2.png"
+    image: "/assets/project2.png"
   },
   {
     name: "Social Media Website (SocialWave)",
@@ -206,7 +199,7 @@ const App = () => {
     technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
     github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
     demo: "https://socialwave-demo.herokuapp.com",
-    image: "/src/assets/project3.png"
+    image: "/assets/project3.png"
   },
   {
     name: "Modern Real Estate Marketplace",
@@ -214,7 +207,7 @@ const App = () => {
     technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
     github: "https://github.com/hamzakh86/A-modern-real-estate-",
     demo: "https://modern-real-estate-demo.netlify.app",
-    image: "/src/assets/project4.png"
+    image: "/assets/project4.png"
   },
   {
     name: "Portfolio Website",
@@ -222,7 +215,7 @@ const App = () => {
     technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_04",
     demo: "https://hamza-portfolio-demo.netlify.app",
-    image: "/src/assets/project5.png"
+    image: "/assets/project5.png"
   },
   {
     name: "Responsive Landing Page (AI Revolution)",
@@ -230,7 +223,7 @@ const App = () => {
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_01",
     demo: "https://ai-revolution-demo.netlify.app",
-    image: "/src/assets/project6.png"
+    image: "/assets/project6.png"
   },
   {
     name: "Stopwatch Web Application (Chrono Elite Pro)",
@@ -238,7 +231,7 @@ const App = () => {
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_02",
     demo: "https://chrono-elite-pro.netlify.app",
-    image: "/src/assets/project7.png"
+    image: "/assets/project7.png"
   },
   {
     name: "Tic-Tac-Toe Web Application",
@@ -246,7 +239,7 @@ const App = () => {
     technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_03",
     demo: "https://tic-tac-toe-ai-demo.netlify.app",
-    image: "/src/assets/project8.png"
+    image: "/assets/project8.png"
   },
 ];
 
@@ -311,19 +304,19 @@ const App = () => {
       name: "Sabrine Loussaief",
       role: "Instructor at GOMYCODE",
       content: "I am thrilled to share my experience with my student, who has truly excelled in web development. From the very beginning, he displayed an impressive passion for the field. His dedication to mastering HTML, CSS, and JavaScript, along with advanced technologies like React and Node.js, has been remarkable. What sets him apart is his exceptional problem-solving skills and innovative approach. Each project he undertakes showcases his growth, both technically and creatively. Today, he stands out as a skilled web developer, ready to tackle any challenge in the ever-evolving tech landscape.",
-      image: "/src/assets/sabrine-profile.webp"
+      image: "/assets/sabrine-profile.webp"
     },
     {
       name: "Mohamed Amine Sefi",
       role: "UI/UX Designer at CWD",
       content: "I've had the pleasure of working closely with Hamza on multiple projects at Celestial Wave Digital. As a frontend developer, he consistently demonstrates an impressive ability to translate complex UI/UX designs into highly functional, user-friendly web applications.",
-      image: "/src/assets/amine-profile.webp"
+      image: "/assets/amine-profile.webp"
     },
     {
       name: "Sarra Fersi",
       role: "Intern at CWD",
       content: "I've had the pleasure of working alongside Hamza on several projects and I can confidently say that he is an exceptional developer. His ability to solve complex problems with clean efficient code paired with a strong sense of design and user experience truly sets him apart. Whether it's creating robust backend systems building dynamic user interfaces or Hamza consistently delivers high-quality work. His passion for technology and continuous learning is evident in every project he tackles. I highly recommend Hamza to anyone seeking a dedicated and skilled developer.",
-      image: "/src/assets/sarah-profile.webp"
+      image: "/assets/sarah-profile.webp"
     }
   ];
 
@@ -1454,3 +1447,4 @@ const App = () => {
 };
 
 export default App;
+
