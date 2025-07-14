@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { 
-  Menu, 
-  X, 
-  Github, 
-  ExternalLink, 
-  Mail, 
-  MapPin, 
+import {
+  Menu,
+  X,
+  Github,
+  ExternalLink,
+  Mail,
+  MapPin,
   Download,
   Code,
   Briefcase,
@@ -80,7 +80,7 @@ const App = () => {
 
   const roles = [
     "Full Stack JS Developer",
-    "Freelancer", 
+    "Freelancer",
     "Frontend Developer",
     "Backend Developer",
     "Mobile Developer"
@@ -104,7 +104,7 @@ const App = () => {
       logo: fullstackLogo
     },
     {
-      title: "Frontend Developer", 
+      title: "Frontend Developer",
       description: "Creating responsive and interactive user interfaces with React.js and modern frameworks",
       logo: frontendLogo
     },
@@ -119,7 +119,7 @@ const App = () => {
       logo: reactNativeLogo
     }
   ];
-  
+
   const technologies = [
     { name: "HTML 5", icon: htmlLogo, color: "from-orange-500 to-red-500" },
     { name: "CSS 3", icon: cssLogo, color: "from-blue-500 to-cyan-500" },
@@ -194,7 +194,7 @@ const App = () => {
     technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
     github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
     demo: "https://ecommerce-demo-hamza.netlify.app",
-    image: "/src/assets/project1.png"
+    image: "/project1.png"
   },
   {
     name: "Project Management Website (TeamSpace)",
@@ -202,7 +202,7 @@ const App = () => {
     technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
     github: "https://github.com/hamzakh86/codealpha-teamspace",
     demo: "https://teamspace-demo.netlify.app",
-    image: "/src/assets/project2.png"
+    image: "/project2.png"
   },
   {
     name: "Social Media Website (SocialWave)",
@@ -210,7 +210,7 @@ const App = () => {
     technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
     github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
     demo: "https://socialwave-demo.herokuapp.com",
-    image: "/src/assets/project3.png"
+    image: "/project3.png"
   },
   {
     name: "Modern Real Estate Marketplace",
@@ -218,7 +218,7 @@ const App = () => {
     technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
     github: "https://github.com/hamzakh86/A-modern-real-estate-",
     demo: "https://modern-real-estate-demo.netlify.app",
-    image: "/src/assets/project4.png"
+    image: "/project4.png"
   },
   {
     name: "Portfolio Website",
@@ -226,7 +226,7 @@ const App = () => {
     technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_04",
     demo: "https://hamza-portfolio-demo.netlify.app",
-    image: "/src/assets/project5.png"
+    image: "/project5.png"
   },
   {
     name: "Responsive Landing Page (AI Revolution)",
@@ -234,7 +234,7 @@ const App = () => {
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_01",
     demo: "https://ai-revolution-demo.netlify.app",
-    image: "/src/assets/project6.png"
+    image: "/project6.png"
   },
   {
     name: "Stopwatch Web Application (Chrono Elite Pro)",
@@ -242,7 +242,7 @@ const App = () => {
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_02",
     demo: "https://chrono-elite-pro.netlify.app",
-    image: "/src/assets/project7.png"
+    image: "/project7.png"
   },
   {
     name: "Tic-Tac-Toe Web Application",
@@ -250,7 +250,7 @@ const App = () => {
     technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_03",
     demo: "https://tic-tac-toe-ai-demo.netlify.app",
-    image: "/src/assets/project8.png"
+    image: "/project8.png"
   },
 ];
 
@@ -315,19 +315,19 @@ const App = () => {
       name: "Sabrine Loussaief",
       role: "Instructor at GOMYCODE",
       content: "I am thrilled to share my experience with my student, who has truly excelled in web development. From the very beginning, he displayed an impressive passion for the field. His dedication to mastering HTML, CSS, and JavaScript, along with advanced technologies like React and Node.js, has been remarkable. What sets him apart is his exceptional problem-solving skills and innovative approach. Each project he undertakes showcases his growth, both technically and creatively. Today, he stands out as a skilled web developer, ready to tackle any challenge in the ever-evolving tech landscape.",
-      image: "/src/assets/sabrine-profile.webp"
+      image: "/sabrine-profile.webp"
     },
     {
       name: "Mohamed Amine Sefi",
       role: "UI/UX Designer at CWD",
       content: "I've had the pleasure of working closely with Hamza on multiple projects at Celestial Wave Digital. As a frontend developer, he consistently demonstrates an impressive ability to translate complex UI/UX designs into highly functional, user-friendly web applications.",
-      image: "/src/assets/amine-profile.webp"
+      image: "/amine-profile.webp"
     },
     {
       name: "Sarra Fersi",
       role: "Intern at CWD",
       content: "I've had the pleasure of working alongside Hamza on several projects and I can confidently say that he is an exceptional developer. His ability to solve complex problems with clean efficient code paired with a strong sense of design and user experience truly sets him apart. Whether it's creating robust backend systems building dynamic user interfaces or Hamza consistently delivers high-quality work. His passion for technology and continuous learning is evident in every project he tackles. I highly recommend Hamza to anyone seeking a dedicated and skilled developer.",
-      image: "/src/assets/sarah-profile.webp"
+      image: "/sarah-profile.webp"
     }
   ];
 
@@ -442,8 +442,7 @@ const App = () => {
       setContactForm({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Contact form error:', error);
-      setSubmitStatus('error');
-      
+
       // Afficher l'erreur spécifique dans la console pour le débogage
       if (error.message) {
         console.error('Error details:', error.message);
@@ -465,7 +464,7 @@ const App = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <motion.div 
+            <motion.div
               className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -488,7 +487,7 @@ const App = () => {
                   {item.label}
                 </button>
               ))}
-              
+
               <Button
                 variant="ghost"
                 size="sm"
@@ -583,9 +582,9 @@ const App = () => {
                   Get In Touch
                 </Button>
                 <div className="relative">
-                  <Button 
-                    variant="outline" 
-                    onClick={() => setShowCVOptions(!showCVOptions)} 
+                  <Button
+                    variant="outline"
+                    onClick={() => setShowCVOptions(!showCVOptions)}
                     size="lg"
                     className="w-full sm:w-auto"
                   >
@@ -668,10 +667,10 @@ const App = () => {
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              I'm a skilled software developer with experience in TypeScript and JavaScript, 
-              and expertise in frameworks like React.js, Next.js, Node.js, Nest.js, and Three.js. 
-              I'm a quick learner and collaborate closely with clients to create efficient, 
-              scalable, and user-friendly solutions that solve real-world problems. 
+              I'm a skilled software developer with experience in TypeScript and JavaScript,
+              and expertise in frameworks like React.js, Next.js, Node.js, Nest.js, and Three.js.
+              I'm a quick learner and collaborate closely with clients to create efficient,
+              scalable, and user-friendly solutions that solve real-world problems.
               Let's work together to bring your ideas to life!
             </p>
           </motion.div>
@@ -688,8 +687,8 @@ const App = () => {
                 <Card className="h-full hover:shadow-lg transition-shadow">
                   <CardHeader className="text-center">
                     <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full flex items-center justify-center">
-                      <img 
-                        src={service.logo} 
+                      <img
+                        src={service.logo}
                         alt={service.title}
                         className="w-10 h-10 object-contain"
                       />
@@ -736,17 +735,17 @@ const App = () => {
                     <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-primary to-transparent"></div>
                   )}
                 </div>
-                
+
                 <div className="relative pl-14">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
                     <div className="h-3 w-3 rounded-full bg-primary"></div>
                   </div>
-                  
+
                   <Card className="overflow-hidden">
                     <div className="flex items-center gap-4 p-4 border-b">
-                      <img 
-                        src={exp.logo} 
-                        alt={exp.company} 
+                      <img
+                        src={exp.logo}
+                        alt={exp.company}
                         className="h-12 w-12 object-contain rounded-md"
                       />
                       <div>
@@ -757,7 +756,7 @@ const App = () => {
                         </Badge>
                       </div>
                     </div>
-                    
+
                     <CardContent className="p-4 pt-2">
                       <ul className="space-y-2">
                         {exp.points.map((point, i) => (
@@ -799,9 +798,9 @@ const App = () => {
 
                     <Card className={`w-full max-w-lg ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}>
                       <div className="flex items-center gap-4 p-6 pb-4">
-                        <img 
-                          src={exp.logo} 
-                          alt={exp.company} 
+                        <img
+                          src={exp.logo}
+                          alt={exp.company}
                           className="h-14 w-14 object-contain rounded-md"
                         />
                         <div>
@@ -809,12 +808,12 @@ const App = () => {
                           <p className="text-muted-foreground">{exp.company}</p>
                         </div>
                       </div>
-                      
+
                       <CardContent className="px-6 pb-6 pt-0">
                         <Badge variant="secondary" className="mb-4">
                           {exp.duration}
                         </Badge>
-                        
+
                         <ul className="space-y-3">
                           {exp.points.map((point, i) => (
                             <li key={i} className="flex items-start gap-3">
@@ -1005,9 +1004,9 @@ const App = () => {
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Projects</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Following projects showcase my skills and experience through real-world examples of my work. 
-              Each project is briefly described with links to code repositories and live demos. 
-              It reflects my ability to solve complex problems, work with different technologies, 
+              Following projects showcase my skills and experience through real-world examples of my work.
+              Each project is briefly described with links to code repositories and live demos.
+              It reflects my ability to solve complex problems, work with different technologies,
               and manage projects effectively.
             </p>
           </motion.div>
@@ -1024,8 +1023,8 @@ const App = () => {
                 <Card className="h-full hover:shadow-lg transition-shadow">
                   {project.image && (
                     <div className="w-full h-48 overflow-hidden rounded-t-lg">
-                      <img 
-                        src={project.image} 
+                      <img
+                        src={project.image}
                         alt={project.name}
                         className="w-full h-full object-cover"
                       />
@@ -1097,8 +1096,8 @@ const App = () => {
                 <Card className="h-full hover:shadow-lg transition-shadow">
                   {cert.image && (
                     <div className="w-full h-64 overflow-hidden rounded-t-lg bg-white flex items-center justify-center ">
-                      <img 
-                        src={cert.image} 
+                      <img
+                        src={cert.image}
                         alt={cert.title}
                         className="w-full h-full object-contain"
                       />
@@ -1163,8 +1162,8 @@ const App = () => {
                       "{testimonial.content}"
                     </p>
                     <div className="flex items-center">
-                      <img 
-                        src={testimonial.image} 
+                      <img
+                        src={testimonial.image}
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full object-cover mr-4"
                       />
@@ -1215,33 +1214,33 @@ const App = () => {
                     <div className="space-y-4">
                       <div>
                         <label className="text-sm font-medium mb-2 block">Name</label>
-                        <Input 
+                        <Input
                           name="name"
                           value={contactForm.name}
                           onChange={handleContactFormChange}
-                          placeholder="Your name" 
+                          placeholder="Your name"
                           required
                         />
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-2 block">Email</label>
-                        <Input 
-                          type="email" 
+                        <Input
+                          type="email"
                           name="email"
                           value={contactForm.email}
                           onChange={handleContactFormChange}
-                          placeholder="your@email.com" 
+                          placeholder="your@email.com"
                           required
                         />
                       </div>
                       <div>
                         <label className="text-sm font-medium mb-2 block">Message</label>
-                        <Textarea 
+                        <Textarea
                           name="message"
                           value={contactForm.message}
                           onChange={handleContactFormChange}
-                          placeholder="Your message..." 
-                          rows={5} 
+                          placeholder="Your message..."
+                          rows={5}
                           required
                         />
                       </div>
@@ -1380,25 +1379,25 @@ const App = () => {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
               <div className="grid grid-cols-2 gap-2">
-                <button 
+                <button
                   onClick={() => scrollToSection('about')}
                   className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
                 >
                   About
                 </button>
-                <button 
+                <button
                   onClick={() => scrollToSection('experience')}
                   className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
                 >
                   Experience
                 </button>
-                <button 
+                <button
                   onClick={() => scrollToSection('technologies')}
                   className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
                 >
                   Technologies
                 </button>
-                <button 
+                <button
                   onClick={() => scrollToSection('projects')}
                   className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
                 >
@@ -1426,8 +1425,8 @@ const App = () => {
                   © 2024 Hamza Khaled. All rights reserved.
                 </p>
                 <div className="mt-1">
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="text-xs text-blue-500 hover:text-blue-400 transition-colors"
                     onClick={(e) => {
                       e.preventDefault();
@@ -1438,7 +1437,7 @@ const App = () => {
                   </a>
                 </div>
               </div>
-              
+
               {/* Clear blue arrow button */}
               <motion.button
                 onClick={() => scrollToSection('hero')}
@@ -1458,3 +1457,5 @@ const App = () => {
 };
 
 export default App;
+
+
