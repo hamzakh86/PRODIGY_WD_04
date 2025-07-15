@@ -364,36 +364,8 @@ const App = () => {
     }
   }, [isDarkMode]);
 
-  // Fermer le menu mobile quand on clique en dehors
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isMenuOpen && !event.target.closest('.mobile-menu-container')) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
-  }, [isMenuOpen]);
-
-  // Fermer le menu mobile lors du redimensionnement vers desktop
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768 && isMenuOpen) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [isMenuOpen]);
-
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
-  };
-
-  const toggleMobileMenu = () => {
-    setIsMenuOpen(prev => !prev);
   };
 
   const scrollToSection = (sectionId) => {
@@ -401,10 +373,7 @@ const App = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    // Fermer le menu avec un petit délai pour une meilleure UX
-    setTimeout(() => {
-      setIsMenuOpen(false);
-    }, 300);
+    setIsMenuOpen(false);
   };
 
   const downloadCV = (language = 'english') => {
@@ -529,7 +498,7 @@ const App = () => {
               </Button>
             </div>
 
-            <div className="md:hidden flex items-center space-x-2 mobile-menu-container">
+            <div className="md:hidden flex items-center space-x-2">
               <Button
                 variant="ghost"
                 size="sm"
@@ -540,15 +509,9 @@ const App = () => {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={toggleMobileMenu}
-                className="relative z-50"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
-                <motion.div
-                  animate={{ rotate: isMenuOpen ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-                </motion.div>
+                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </Button>
             </div>
           </div>
@@ -558,59 +521,26 @@ const App = () => {
           {isMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
-              animate={{ 
-                opacity: 1, 
-                height: 'auto',
-                transition: {
-                  height: { duration: 0.3, ease: "easeOut" },
-                  opacity: { duration: 0.2, delay: 0.1 }
-                }
-              }}
-              exit={{ 
-                opacity: 0, 
-                height: 0,
-                transition: {
-                  height: { duration: 0.3, ease: "easeIn" },
-                  opacity: { duration: 0.2 }
-                }
-              }}
-              className="md:hidden bg-background/95 backdrop-blur-md border-t border-border mobile-menu-container overflow-hidden"
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden bg-background border-t border-border"
             >
-              <motion.div 
-                className="px-2 pt-2 pb-3 space-y-1"
-                initial={{ y: -20 }}
-                animate={{ y: 0 }}
-                exit={{ y: -20 }}
-                transition={{ duration: 0.2, delay: 0.1 }}
-              >
-                {navItems.map((item, index) => (
-                  <motion.button
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                {navItems.map((item) => (
+                  <button
                     key={item.id}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ 
-                      opacity: 1, 
-                      x: 0,
-                      transition: { delay: index * 0.05 + 0.1 }
-                    }}
-                    exit={{ 
-                      opacity: 0, 
-                      x: -20,
-                      transition: { delay: (navItems.length - index) * 0.03 }
-                    }}
                     onClick={() => scrollToSection(item.id)}
-                    className={`flex items-center px-3 py-3 rounded-md text-base font-medium w-full text-left transition-all duration-200 ${
+                    className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                       activeSection === item.id
-                        ? 'text-primary bg-accent shadow-sm'
-                        : 'text-muted-foreground hover:text-primary hover:bg-accent/50'
+                        ? 'text-primary bg-accent'
+                        : 'text-muted-foreground hover:text-primary'
                     }`}
-                    whileHover={{ x: 4 }}
-                    whileTap={{ scale: 0.98 }}
                   >
-                    <item.icon className="w-5 h-5 mr-3 flex-shrink-0" />
-                    <span>{item.label}</span>
-                  </motion.button>
+                    <item.icon className="inline-block w-4 h-4 mr-2" />
+                    {item.label}
+                  </button>
                 ))}
-              </motion.div>
+              </div>
             </motion.div>
           )}
         </AnimatePresence>
@@ -1513,4 +1443,5 @@ const App = () => {
 };
 
 export default App;
+
 
