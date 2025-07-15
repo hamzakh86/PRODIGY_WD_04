@@ -65,6 +65,19 @@ import './App.css';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Détecter la taille d'écran mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   const [activeSection, setActiveSection] = useState('hero');
   const [currentRole, setCurrentRole] = useState(0);
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -498,41 +511,35 @@ const App = () => {
               </Button>
             </div>
 
-            <div 
-              className="md:hidden flex items-center space-x-2"
-              style={{ 
-                display: window.innerWidth < 768 ? 'flex' : 'none'
-              }}
-            >
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={toggleDarkMode}
-              >
-                {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                aria-label="Toggle mobile menu"
-              >
-                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-              </Button>
-            </div>
+            {isMobile && (
+              <div className="flex items-center space-x-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={toggleDarkMode}
+                >
+                  {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  aria-label="Toggle mobile menu"
+                >
+                  {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                </Button>
+              </div>
+            )}
           </div>
         </div>
 
         <AnimatePresence>
-          {isMenuOpen && (
+          {isMenuOpen && isMobile && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-background border-t border-border"
-              style={{ 
-                display: window.innerWidth < 768 ? 'block' : 'none'
-              }}
+              className="bg-background border-t border-border"
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (
