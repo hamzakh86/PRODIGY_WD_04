@@ -498,24 +498,27 @@ const App = () => {
               </Button>
             </div>
 
-            <div className="block md:hidden">
-              <div className="flex items-center space-x-2">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={toggleDarkMode}
-                >
-                  {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  aria-label="Toggle mobile menu"
-                >
-                  {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-                </Button>
-              </div>
+            <div 
+              className="md:hidden flex items-center space-x-2"
+              style={{ 
+                display: window.innerWidth < 768 ? 'flex' : 'none'
+              }}
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={toggleDarkMode}
+              >
+                {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle mobile menu"
+              >
+                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              </Button>
             </div>
           </div>
         </div>
@@ -526,7 +529,10 @@ const App = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="block md:hidden bg-background border-t border-border"
+              className="md:hidden bg-background border-t border-border"
+              style={{ 
+                display: window.innerWidth < 768 ? 'block' : 'none'
+              }}
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (
