@@ -369,9 +369,26 @@ const App = () => {
   };
 
   const scrollToSection = (sectionId) => {
+    console.log('Scrolling to section:', sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      console.log('Element found, scrolling...');
+      // Calculer la position en tenant compte de la navbar fixe
+      const navbarHeight = 80; // Hauteur approximative de la navbar
+      const elementPosition = element.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+      
+      // Alternative avec scrollIntoView
+      // element.scrollIntoView({ 
+      //   behavior: 'smooth',
+      //   block: 'start'
+      // });
+    } else {
+      console.log('Element not found:', sectionId);
     }
     setIsMenuOpen(false);
   };
@@ -498,7 +515,7 @@ const App = () => {
               </Button>
             </div>
 
-            <div className="md:hidden flex items-center space-x-2">
+            <div className="md:hidden flex items-center space-x-2" style={{ display: 'flex !important' }}>
               <Button
                 variant="ghost"
                 size="sm"
@@ -509,7 +526,10 @@ const App = () => {
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => {
+                  console.log('Menu button clicked, current state:', isMenuOpen);
+                  setIsMenuOpen(!isMenuOpen);
+                }}
                 className="relative z-50"
                 aria-label="Toggle mobile menu"
               >
@@ -525,13 +545,18 @@ const App = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
               className="md:hidden bg-background border-t border-border relative z-40"
+              style={{ display: 'block !important' }}
             >
               <div className="px-2 pt-2 pb-3 space-y-1">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
-                    onClick={() => scrollToSection(item.id)}
+                    onClick={() => {
+                      console.log('Mobile menu item clicked:', item.id);
+                      scrollToSection(item.id);
+                    }}
                     className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                       activeSection === item.id
                         ? 'text-primary bg-accent'
