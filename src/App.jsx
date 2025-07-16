@@ -372,8 +372,9 @@ const App = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      // Close the mobile menu after clicking a link
+      setIsMenuOpen(false);
     }
-    setIsMenuOpen(false);
   };
 
   const downloadCV = (language = 'english') => {
@@ -1445,3 +1446,5 @@ const App = () => {
 };
 
 export default App;
+
+
