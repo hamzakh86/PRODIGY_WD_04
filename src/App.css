@@ -127,6 +127,7 @@
     @apply bg-background text-foreground;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: auto; /* Assure le défilement vertical */
   }
 
   #root {
@@ -189,3 +190,5 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--portfolio-light-blue);
 }
+
+
