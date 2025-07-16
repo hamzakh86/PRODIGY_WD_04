@@ -217,7 +217,7 @@ const App = () => {
     description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
     technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
     github: "https://github.com/hamzakh86/A-modern-real-estate-",
-    demo: "https://modern-real-estate-demo.netlify.app",
+    demo: "https://hamza-estate.onrender.com",
     image: "/project4.png"
   },
   {
@@ -225,7 +225,7 @@ const App = () => {
     description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
     technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_04",
-    demo: "https://hamza-portfolio-demo.netlify.app",
+    demo: "https://hamza-khaled.netlify.app",
     image: "/project5.png"
   },
   {
@@ -233,7 +233,7 @@ const App = () => {
     description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
     technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_01",
-    demo: "https://ai-revolution-demo.netlify.app",
+    demo: "https://ia-revolution.netlify.app",
     image: "/project6.png"
   },
   {
@@ -249,7 +249,7 @@ const App = () => {
     description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
     technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
     github: "https://github.com/hamzakh86/PRODIGY_WD_03",
-    demo: "https://tic-tac-toe-ai-demo.netlify.app",
+    demo: "https://game-tic-tac-toeh.netlify.app",
     image: "/project8.png"
   },
 ];
@@ -372,8 +372,9 @@ const App = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      // Close the mobile menu after clicking a link
+      setIsMenuOpen(false);
     }
-    setIsMenuOpen(false);
   };
 
   const downloadCV = (language = 'english') => {
