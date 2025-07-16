@@ -368,11 +368,15 @@ const App = () => {
     setIsDarkMode(!isDarkMode);
   };
 
+  // Fonction améliorée pour la navigation avec fermeture du menu mobile
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      // Close the mobile menu after clicking a link
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      // Fermer le menu mobile après navigation
       setIsMenuOpen(false);
     }
   };
@@ -474,6 +478,7 @@ const App = () => {
               HK
             </motion.div>
 
+            {/* Navigation desktop */}
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
                 <button
@@ -499,6 +504,7 @@ const App = () => {
               </Button>
             </div>
 
+            {/* Boutons mobile */}
             <div className="md:hidden flex items-center space-x-2">
               <Button
                 variant="ghost"
@@ -520,28 +526,33 @@ const App = () => {
           </div>
         </div>
 
+        {/* Menu mobile amélioré */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-background border-t border-border relative z-40"
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="md:hidden bg-background/95 backdrop-blur-md border-t border-border relative z-40"
             >
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {navItems.map((item) => (
-                  <button
+              <div className="px-2 pt-2 pb-3 space-y-1 max-h-96 overflow-y-auto">
+                {navItems.map((item, index) => (
+                  <motion.button
                     key={item.id}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
                     onClick={() => scrollToSection(item.id)}
-                    className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
+                    className={`flex items-center w-full px-3 py-3 rounded-md text-base font-medium transition-all duration-200 ${
                       activeSection === item.id
-                        ? 'text-primary bg-accent'
+                        ? 'text-primary bg-accent/80 shadow-sm'
                         : 'text-muted-foreground hover:text-primary hover:bg-accent/50'
                     }`}
                   >
-                    <item.icon className="inline-block w-4 h-4 mr-2" />
+                    <item.icon className="w-5 h-5 mr-3" />
                     {item.label}
-                  </button>
+                  </motion.button>
                 ))}
               </div>
             </motion.div>
@@ -1446,5 +1457,4 @@ const App = () => {
 };
 
 export default App;
-
 
