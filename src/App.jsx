@@ -1427,7 +1427,6 @@ const App = () => {
                 </div>
               </div>
 
-              {/* Clear blue arrow button */}
               <motion.button
                 onClick={() => scrollToSection('hero')}
                 whileHover={{ scale: 1.1, y: -2 }}
