@@ -135,6 +135,7 @@ const App = () => {
     { name: "Next.js", icon: nextLogo, color: "from-gray-800 to-gray-600" },
     { name: "Nest.js", icon: nestLogo, color: "from-red-600 to-pink-500" }
   ];
+
   const experiences = [
     {
       title: "Full Stack Development Intern",
@@ -188,71 +189,71 @@ const App = () => {
   ];
 
   const projects = [
-  {
-    name: "E-Commerce Website",
-    description: "Complete e-commerce platform with admin dashboard, PayPal payment system, and product management. Features secure authentication and advanced search functionality.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
-    github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
-    demo: "https://ecommerce-demo-hamza.netlify.app",
-    image: "/project1.png"
-  },
-  {
-    name: "Project Management Website (TeamSpace)",
-    description: "Trello-inspired task management application with real-time collaboration features. Allows creation of customizable workspaces and deadline tracking.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
-    github: "https://github.com/hamzakh86/codealpha-teamspace",
-    demo: "https://teamspace-demo.netlify.app",
-    image: "/project2.png"
-  },
-  {
-    name: "Social Media Website (SocialWave)",
-    description: "Complete social network with posts, comments, and likes system. Features user following functionality and content moderation tools.",
-    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
-    github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
-    demo: "https://socialwave-demo.herokuapp.com",
-    image: "/project3.png"
-  },
-  {
-    name: "Modern Real Estate Marketplace",
-    description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
-    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
-    github: "https://github.com/hamzakh86/A-modern-real-estate-",
-    demo: "https://hamza-estate.onrender.com",
-    image: "/project4.png"
-  },
-  {
-    name: "Portfolio Website",
-    description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
-    technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_04",
-    demo: "https://hamza-khaled.netlify.app",
-    image: "/project5.png"
-  },
-  {
-    name: "Responsive Landing Page (AI Revolution)",
-    description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_01",
-    demo: "https://ia-revolution.netlify.app",
-    image: "/project6.png"
-  },
-  {
-    name: "Stopwatch Web Application (Chrono Elite Pro)",
-    description: "Professional stopwatch with lap system, advanced statistics, and CSV export. Supports keyboard shortcuts and hundredth-second precision.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_02",
-    demo: "https://chrono-elite-pro.netlify.app",
-    image: "/project7.png"
-  },
-  {
-    name: "Tic-Tac-Toe Web Application",
-    description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
-    technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_03",
-    demo: "https://game-tic-tac-toeh.netlify.app",
-    image: "/project8.png"
-  },
-];
+    {
+      name: "E-Commerce Website",
+      description: "Complete e-commerce platform with admin dashboard, PayPal payment system, and product management. Features secure authentication and advanced search functionality.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
+      github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
+      demo: "https://ecommerce-demo-hamza.netlify.app",
+      image: "/project1.png"
+    },
+    {
+      name: "Project Management Website (TeamSpace)",
+      description: "Trello-inspired task management application with real-time collaboration features. Allows creation of customizable workspaces and deadline tracking.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
+      github: "https://github.com/hamzakh86/codealpha-teamspace",
+      demo: "https://teamspace-demo.netlify.app",
+      image: "/project2.png"
+    },
+    {
+      name: "Social Media Website (SocialWave)",
+      description: "Complete social network with posts, comments, and likes system. Features user following functionality and content moderation tools.",
+      technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
+      github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
+      demo: "https://socialwave-demo.herokuapp.com",
+      image: "/project3.png"
+    },
+    {
+      name: "Modern Real Estate Marketplace",
+      description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
+      technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
+      github: "https://github.com/hamzakh86/A-modern-real-estate-",
+      demo: "https://hamza-estate.onrender.com",
+      image: "/project4.png"
+    },
+    {
+      name: "Portfolio Website",
+      description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
+      technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_04",
+      demo: "https://hamza-khaled.netlify.app",
+      image: "/project5.png"
+    },
+    {
+      name: "Responsive Landing Page (AI Revolution)",
+      description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
+      technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_01",
+      demo: "https://ia-revolution.netlify.app",
+      image: "/project6.png"
+    },
+    {
+      name: "Stopwatch Web Application (Chrono Elite Pro)",
+      description: "Professional stopwatch with lap system, advanced statistics, and CSV export. Supports keyboard shortcuts and hundredth-second precision.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_02",
+      demo: "https://chrono-elite-pro.netlify.app",
+      image: "/project7.png"
+    },
+    {
+      name: "Tic-Tac-Toe Web Application",
+      description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
+      technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_03",
+      demo: "https://game-tic-tac-toeh.netlify.app",
+      image: "/project8.png"
+    }
+  ];
 
   const certifications = [
     {
@@ -261,13 +262,13 @@ const App = () => {
       link: "https://diploma.gomycode.app/?id=31705411332830853",
       image: certification1
     },
-        {
+    {
       title: "freeCodeCamp",
       description: "Back End Development and APIs",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
       image: certification5
     },
-        {
+    {
       title: "Postman",
       description: "Postman API Fundamentals Student Expert",
       link: "https://badgr.com/print-certificate/66a41b7a1ea7d93715e019af",
@@ -292,21 +293,21 @@ const App = () => {
       image: certification4
     },
     {
-    title: "SCRUMstudy",
-    description: "Scrum for Ops and DevOps Fundamentals",
-    link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
-    image: certification8
+      title: "SCRUMstudy",
+      description: "Scrum for Ops and DevOps Fundamentals",
+      link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
+      image: certification8
     },
-   {
+    {
       title: "SCRUMstudy",
       description: "Scrum Fundamentals Certified (SFC)",
       link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1036406",
       image: certification9
     },
-   {
-    title: "Certifprof",
-    description: "Scrum Foundation Professional Certificate SFPC (v2020)",
-    image: certification7
+    {
+      title: "Certifprof",
+      description: "Scrum Foundation Professional Certificate SFPC (v2020)",
+      image: certification7
     }
   ];
 
@@ -372,7 +373,6 @@ const App = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      // Close the mobile menu after clicking a link
       setIsMenuOpen(false);
     }
   };
@@ -403,14 +403,10 @@ const App = () => {
     setSubmitStatus('');
 
     try {
-      // Configuration EmailJS avec les variables d'environnement
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      console.log('EmailJS Config:', { serviceId, templateId, publicKey });
-
-      // Vérifier que les variables d'environnement sont configurées
       if (!serviceId || serviceId === 'your_service_id_here') {
         throw new Error('Service ID manquant ou non configuré dans le fichier .env');
       }
@@ -421,16 +417,12 @@ const App = () => {
         throw new Error('Public Key manquante ou non configurée dans le fichier .env');
       }
 
-      // Paramètres du template EmailJS
       const templateParams = {
         name: contactForm.name,
         email: contactForm.email,
         message: contactForm.message,
       };
 
-      console.log('Sending email with params:', templateParams);
-
-      // Envoyer l'email via EmailJS
       const response = await emailjs.send(
         serviceId,
         templateId,
@@ -438,16 +430,11 @@ const App = () => {
         publicKey
       );
 
-      console.log('Email sent successfully:', response);
       setSubmitStatus('success');
       setContactForm({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Contact form error:', error);
-
-      // Afficher l'erreur spécifique dans la console pour le débogage
-      if (error.message) {
-        console.error('Error details:', error.message);
-      }
+      setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitStatus(''), 5000);
@@ -641,8 +628,6 @@ const App = () => {
             </motion.div>
           </div>
         </div>
-
-
       </section>
 
       <section id="about" className="py-32 bg-card">
@@ -718,7 +703,6 @@ const App = () => {
                 viewport={{ once: true }}
                 className="relative"
               >
-                {/* Timeline dot */}
                 <div className="absolute left-5 top-6 h-full w-0.5 bg-primary/20">
                   {index === experiences.length - 1 ? null : (
                     <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-primary to-transparent"></div>
@@ -765,7 +749,6 @@ const App = () => {
           {/* Desktop Experience Timeline */}
           <div className="hidden md:block">
             <div className="relative">
-              {/* Timeline line */}
               <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-primary/20">
                 <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-b from-primary via-primary to-transparent"></div>
               </div>
@@ -780,7 +763,6 @@ const App = () => {
                     viewport={{ once: true }}
                     className={`relative flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
                   >
-                    {/* Timeline dot */}
                     <div className="absolute left-1/2 top-6 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-primary/10">
                       <div className="h-3 w-3 rounded-full bg-primary"></div>
                     </div>
@@ -822,165 +804,96 @@ const App = () => {
       </section>
 
       <section id="technologies" className="py-20 bg-gradient-to-br from-background via-card to-background relative overflow-hidden overflow-x-hidden">
-  {/* Background Effects */}
-  <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-  <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-  <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
 
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-      className="text-center mb-16"
-    >
-      <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-        Technologies
-      </h2>
-      <p className="text-lg text-muted-foreground">Technologies I work with</p>
-    </motion.div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Technologies
+            </h2>
+            <p className="text-lg text-muted-foreground">Technologies I work with</p>
+          </motion.div>
 
-    {/* Desktop Grid Layout */}
-    <div className="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-      {technologies.map((tech, index) => (
-        <motion.div
-          key={tech.name}
-          initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
-          whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-          transition={{
-            duration: 0.8,
-            delay: index * 0.1,
-            type: "spring",
-            stiffness: 100
-          }}
-          viewport={{ once: true }}
-          whileHover={{
-            scale: 1.1,
-            rotateY: 15,
-            z: 50
-          }}
-          className="group relative"
-        >
-          <div className={`relative w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${tech.color} p-0.5 shadow-2xl`}>
-            <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center relative overflow-hidden">
-              <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
-              <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
-              {tech.icon ? (
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
-                />
-              ) : (
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-lg relative z-10`}>
-                  {tech.name.charAt(0)}
+          <div className="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+            {technologies.map((tech, index) => (
+              <motion.div
+                key={tech.name}
+                initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
+                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+                transition={{
+                  duration: 0.8,
+                  delay: index * 0.1,
+                  type: "spring",
+                  stiffness: 100
+                }}
+                viewport={{ once: true }}
+                whileHover={{
+                  scale: 1.1,
+                  rotateY: 15,
+                  z: 50
+                }}
+                className="group relative"
+              >
+                <div className={`relative w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${tech.color} p-0.5 shadow-2xl`}>
+                  <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center relative overflow-hidden">
+                    <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
+                    <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
+                    <img
+                      src={tech.icon}
+                      alt={tech.name}
+                      className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
-              )}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {[...Array(6)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className={`absolute w-1 h-1 bg-gradient-to-r ${tech.color} rounded-full`}
-                    style={{
-                      left: `${20 + i * 10}%`,
-                      top: `${20 + i * 10}%`,
-                    }}
-                    animate={{
-                      scale: [0, 1, 0],
-                      opacity: [0, 1, 0],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: i * 0.2,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
+
+                <motion.h3
+                  className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  {tech.name}
+                </motion.h3>
+              </motion.div>
+            ))}
           </div>
 
-          <motion.h3
-            className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-          >
-            {tech.name}
-          </motion.h3>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileHover={{ opacity: 1, y: 0 }}
-            className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-foreground text-background px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap pointer-events-none"
-          >
-            {tech.name}
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
-          </motion.div>
-        </motion.div>
-      ))}
-    </div>
-
-    {/* Mobile Grid Layout */}
-    <div className="md:hidden px-4">
-      <div className="grid grid-cols-3 gap-6 justify-items-center">
-        {technologies.map((tech, index) => (
-          <motion.div
-            key={tech.name}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
-            viewport={{ once: true }}
-            className="group"
-          >
-            <div className={`relative w-20 h-20 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
-              <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
-                {tech.icon ? (
-                  <img
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-10 h-10 object-contain relative z-10"
-                  />
-                ) : (
-                  <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
-                    {tech.name.charAt(0)}
+          <div className="md:hidden px-4">
+            <div className="grid grid-cols-3 gap-6 justify-items-center">
+              {technologies.map((tech, index) => (
+                <motion.div
+                  key={tech.name}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  className="group"
+                >
+                  <div className={`relative w-20 h-20 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
+                    <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
+                      <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
+                      <img
+                        src={tech.icon}
+                        alt={tech.name}
+                        className="w-10 h-10 object-contain relative z-10"
+                      />
+                    </div>
                   </div>
-                )}
-              </div>
+                  <h3 className="text-xs font-medium text-center text-foreground w-20">
+                    {tech.name}
+                  </h3>
+                </motion.div>
+              ))}
             </div>
-            <h3 className="text-xs font-medium text-center text-foreground w-20">
-              {tech.name}
-            </h3>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-
-    {/* Floating Animation Elements */}
-    <div className="absolute inset-0 pointer-events-none">
-      {[...Array(8)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-2 h-2 bg-primary/30 rounded-full"
-          style={{
-            left: `${10 + i * 10}%`,
-            top: `${20 + (i % 3) * 20}%`,
-          }}
-          animate={{
-            y: [-20, 20, -20],
-            opacity: [0.3, 0.8, 0.3],
-          }}
-          transition={{
-            duration: 3 + i * 0.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
-      ))}
-    </div>
-  </div>
-</section>
-
+          </div>
+        </div>
+      </section>
 
       <section id="projects" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1248,104 +1161,7 @@ const App = () => {
                 </CardContent>
               </Card>
             </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
-              {/* Email Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Email me at</h3>
-                <div className="flex items-center space-x-3">
-                  <p className="text-xl font-semibold text-gray-800 dark:text-gray-200">khaledhamza251785@gmail.com</p>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => copyToClipboard('khaledhamza251785@gmail.com')}
-                    className="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2"
-                  >
-                    <Copy className="w-4 h-4" />
-                  </Button>
-                </div>
-                {emailCopied && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="text-sm text-green-600 font-medium"
-                  >
-                    E-mail Copié ✓
-                  </motion.div>
-                )}
-              </div>
-
-              {/* Socials Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-foreground">Socials</h3>
-                <div className="flex items-center space-x-4">
-                  {/* GitHub */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://github.com/hamzakh86', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Github className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* LinkedIn */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.linkedin.com/in/hamza-khaled-16a114290/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Linkedin className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* Instagram */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.instagram.com/hamzakhaledofficial86/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Instagram className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* Facebook */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.facebook.com/hamzakhaledofficial86/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Facebook className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* WhatsApp */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://wa.me/21625178855', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Phone className="w-6 h-6 text-primary" />
-                  </motion.button>
-                </div>
-              </div>
-
-              {/* Location Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Location</h3>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-gray-500 dark:text-gray-400" />
-                  <p className="text-lg text-gray-900 dark:text-white">Tunisia 🇹🇳</p>
-                </div>
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </div>
@@ -1354,7 +1170,6 @@ const App = () => {
       <footer className="bg-background/80 backdrop-blur-md border-t border-border text-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {/* Logo and description */}
             <div className="space-y-4">
               <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
                 HK
@@ -1364,77 +1179,71 @@ const App = () => {
               </p>
             </div>
 
-            {/* Quick links */}
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Quick Links</h3>
               <div className="grid grid-cols-2 gap-2">
-                <button
-                  onClick={() => scrollToSection('about')}
-                  className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
-                >
-                  About
-                </button>
-                <button
-                  onClick={() => scrollToSection('experience')}
-                  className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
-                >
-                  Experience
-                </button>
-                <button
-                  onClick={() => scrollToSection('technologies')}
-                  className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
-                >
-                  Technologies
-                </button>
-                <button
-                  onClick={() => scrollToSection('projects')}
-                  className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
-                >
-                  Projects
-                </button>
+                {navItems.map(item => (
+                  <button
+                    key={item.id}
+                    onClick={() => scrollToSection(item.id)}
+                    className="text-muted-foreground hover:text-blue-500 transition-colors text-left text-sm"
+                  >
+                    {item.label}
+                  </button>
+                ))}
               </div>
             </div>
 
-            {/* Contact */}
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Contact</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-2">
                   <span className="text-muted-foreground text-sm">khaledhamza251785@gmail.com</span>
                 </div>
+                <div className="flex items-center space-x-4">
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => window.open('https://github.com/hamzakh86', '_blank')}
+                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors"
+                  >
+                    <Github className="w-5 h-5 text-primary" />
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => window.open('https://www.linkedin.com/in/hamza-khaled-16a114290/', '_blank')}
+                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5 text-primary" />
+                  </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={() => window.open('https://wa.me/21625178855', '_blank')}
+                    className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors"
+                  >
+                    <Phone className="w-5 h-5 text-primary" />
+                  </motion.button>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Separator line */}
           <div className="border-t border-border pt-8">
             <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
               <div className="text-center sm:text-left">
                 <p className="text-muted-foreground text-sm">
-                  © 2024 Hamza Khaled. All rights reserved.
+                  © 2025 Hamza Khaled. All rights reserved.
                 </p>
-                <div className="mt-1">
-                  <a
-                    href="#"
-                    className="text-xs text-blue-500 hover:text-blue-400 transition-colors"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      console.log('Redirect to PortfolioAdmin');
-                    }}
-                  >
-                    PortfolioAdmin
-                  </a>
-                </div>
               </div>
-
               <motion.button
                 onClick={() => scrollToSection('hero')}
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="group relative w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 shadow-lg"
               >
-                <ArrowUp className="w-5 h-5 text-white group-hover:animate-bounce" />
-                <div className="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-20 animate-pulse"></div>
+                <ArrowUp className="w-5 h-5 text-white" />
               </motion.button>
             </div>
           </div>
@@ -1445,4 +1254,3 @@ const App = () => {
 };
 
 export default App;
-
