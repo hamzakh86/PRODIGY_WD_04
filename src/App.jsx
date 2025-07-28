@@ -61,30 +61,7 @@ import threejsLogo from './assets/threejs.webp';
 import gitLogo from './assets/git.webp';
 import nextLogo from './assets/next.webp';
 import nestLogo from './assets/nest.webp';
-import pythonLogo from './assets/python.webp';
-import mysqlLogo from './assets/mysql.webp';
-import githubLogo from './assets/github.webp';
-import bootstrapLogo from './assets/bootstrap.webp';
-import postmanLogo from './assets/postman.webp';
-import firebaseLogo from './assets/firebase.webp';
-import figmaLogo from './assets/figma.webp';
-import canvaLogo from './assets/canva.webp';
-import vscodeLogo from './assets/vscode.webp';
-import mongooseLogo from './assets/mongoose.webp';
-import swaggerLogo from './assets/swagger.webp';
-import viteLogo from './assets/vite.webp';
-import shadcnLogo from './assets/shadcn.webp';
-import jwtLogo from './assets/jwt.webp';
-import expoLogo from './assets/expo.webp';
-import flaskLogo from './assets/flask.webp';
-import djangoLogo from './assets/django.webp';
-import springbootLogo from './assets/springboot.webp';
-import angularLogo from './assets/angular.webp';
-import vuejsLogo from './assets/vuejs.webp';
-import dotnetLogo from './assets/dotnet.webp';
-import postgresqlLogo from './assets/postgresql.webp';
-import laravelLogo from './assets/laravel.webp';
-import chartjsLogo from './assets/chartjs.webp';
+
 import './App.css';
 
 const App = () => {
