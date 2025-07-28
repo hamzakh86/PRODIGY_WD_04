@@ -61,6 +61,30 @@ import threejsLogo from './assets/threejs.webp';
 import gitLogo from './assets/git.webp';
 import nextLogo from './assets/next.webp';
 import nestLogo from './assets/nest.webp';
+import pythonLogo from './assets/python.webp';
+import mysqlLogo from './assets/mysql.webp';
+import githubLogo from './assets/github.webp';
+import bootstrapLogo from './assets/bootstrap.webp';
+import postmanLogo from './assets/postman.webp';
+import firebaseLogo from './assets/firebase.webp';
+import figmaLogo from './assets/figma.webp';
+import canvaLogo from './assets/canva.webp';
+import vscodeLogo from './assets/vscode.webp';
+import mongooseLogo from './assets/mongoose.webp';
+import swaggerLogo from './assets/swagger.webp';
+import viteLogo from './assets/vite.webp';
+import shadcnLogo from './assets/shadcn.webp';
+import jwtLogo from './assets/jwt.webp';
+import expoLogo from './assets/expo.webp';
+import flaskLogo from './assets/flask.webp';
+import djangoLogo from './assets/django.webp';
+import springbootLogo from './assets/springboot.webp';
+import angularLogo from './assets/angular.webp';
+import vuejsLogo from './assets/vuejs.webp';
+import dotnetLogo from './assets/dotnet.webp';
+import postgresqlLogo from './assets/postgresql.webp';
+import laravelLogo from './assets/laravel.webp';
+import chartjsLogo from './assets/chartjs.webp';
 import './App.css';
 
 const App = () => {
@@ -77,6 +101,10 @@ const App = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  const [showAllCertifications, setShowAllCertifications] = useState(false);
+  const [showAllTestimonials, setShowAllTestimonials] = useState(false);
 
   const roles = [
     "Full Stack JS Developer",
@@ -350,6 +378,9 @@ const App = () => {
           break;
         }
       }
+
+      // Gérer la visibilité du bouton de retour en haut - visible dès qu'on commence à scroller
+      setShowScrollTop(window.scrollY > 100);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -369,12 +400,19 @@ const App = () => {
   };
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      // Close the mobile menu after clicking a link
-      setIsMenuOpen(false);
-    }
+    // Fermer le menu mobile d'abord
+    setIsMenuOpen(false);
+    
+    // Ajouter un petit délai pour permettre au menu de se fermer avant le scroll
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
   };
 
   const downloadCV = (language = 'english') => {
@@ -842,7 +880,7 @@ const App = () => {
     </motion.div>
 
     {/* Desktop Grid Layout */}
-    <div className="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+    <div className="hidden md:grid grid-cols-6 lg:grid-cols-8 gap-6 mb-12">
       {technologies.map((tech, index) => (
         <motion.div
           key={tech.name}
@@ -862,18 +900,18 @@ const App = () => {
           }}
           className="group relative"
         >
-          <div className={`relative w-24 h-24 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${tech.color} p-0.5 shadow-2xl`}>
-            <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-2xl flex items-center justify-center relative overflow-hidden">
+          <div className={`relative w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
+            <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
               <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
               <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
               {tech.icon ? (
                 <img
                   src={tech.icon}
                   alt={tech.name}
-                  className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+                  className="w-8 h-8 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
                 />
               ) : (
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-lg relative z-10`}>
+                <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
                   {tech.name.charAt(0)}
                 </div>
               )}
@@ -902,7 +940,7 @@ const App = () => {
           </div>
 
           <motion.h3
-            className="text-sm font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
+            className="text-xs font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
             whileHover={{ scale: 1.05 }}
           >
             {tech.name}
@@ -922,7 +960,7 @@ const App = () => {
 
     {/* Mobile Grid Layout */}
     <div className="md:hidden px-4">
-      <div className="grid grid-cols-3 gap-6 justify-items-center">
+      <div className="grid grid-cols-4 gap-4 justify-items-center">
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.name}
@@ -932,23 +970,23 @@ const App = () => {
             viewport={{ once: true }}
             className="group"
           >
-            <div className={`relative w-20 h-20 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
+            <div className={`relative w-16 h-16 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
               <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
                 {tech.icon ? (
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-10 h-10 object-contain relative z-10"
+                    className="w-8 h-8 object-contain relative z-10"
                   />
                 ) : (
-                  <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
+                  <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-xs relative z-10`}>
                     {tech.name.charAt(0)}
                   </div>
                 )}
               </div>
             </div>
-            <h3 className="text-xs font-medium text-center text-foreground w-20">
+            <h3 className="text-xs font-medium text-center text-foreground w-16">
               {tech.name}
             </h3>
           </motion.div>
@@ -1001,7 +1039,7 @@ const App = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {(showAllProjects ? projects : projects.slice(0, 3)).map((project, index) => (
               <motion.div
                 key={project.name}
                 initial={{ opacity: 0, y: 50 }}
@@ -1057,6 +1095,19 @@ const App = () => {
               </motion.div>
             ))}
           </div>
+
+          {projects.length > 3 && (
+            <div className="text-center mt-12">
+              <Button
+                onClick={() => setShowAllProjects(!showAllProjects)}
+                variant="outline"
+                size="lg"
+              >
+                {showAllProjects ? 'Show Less' : 'Show More'}
+                <ChevronDown className={`ml-2 h-4 w-4 transition-transform ${showAllProjects ? 'rotate-180' : ''}`} />
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -1074,7 +1125,7 @@ const App = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
+            {(showAllCertifications ? certifications : certifications.slice(0, 3)).map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -1115,6 +1166,19 @@ const App = () => {
               </motion.div>
             ))}
           </div>
+
+          {certifications.length > 3 && (
+            <div className="text-center mt-12">
+              <Button
+                onClick={() => setShowAllCertifications(!showAllCertifications)}
+                variant="outline"
+                size="lg"
+              >
+                {showAllCertifications ? 'Show Less' : 'Show More'}
+                <ChevronDown className={`ml-2 h-4 w-4 transition-transform ${showAllCertifications ? 'rotate-180' : ''}`} />
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -1132,7 +1196,7 @@ const App = () => {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {(showAllTestimonials ? testimonials : testimonials.slice(0, 3)).map((testimonial, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -1166,6 +1230,19 @@ const App = () => {
               </motion.div>
             ))}
           </div>
+
+          {testimonials.length > 3 && (
+            <div className="text-center mt-12">
+              <Button
+                onClick={() => setShowAllTestimonials(!showAllTestimonials)}
+                variant="outline"
+                size="lg"
+              >
+                {showAllTestimonials ? 'Show Less' : 'Show More'}
+                <ChevronDown className={`ml-2 h-4 w-4 transition-transform ${showAllTestimonials ? 'rotate-180' : ''}`} />
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -1258,9 +1335,9 @@ const App = () => {
             >
               {/* Email Section */}
               <div className="space-y-4">
-                <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Email me at</h3>
+                <h3 className="text-lg font-medium text-foreground">Email me at</h3>
                 <div className="flex items-center space-x-3">
-                  <p className="text-xl font-semibold text-gray-800 dark:text-gray-200">khaledhamza251785@gmail.com</p>
+                  <p className="text-base font-medium text-foreground">khaledhamza251785@gmail.com</p>
                   <Button
                     variant="ghost"
                     size="sm"
@@ -1426,20 +1503,25 @@ const App = () => {
                   </a>
                 </div>
               </div>
-
-              <motion.button
-                onClick={() => scrollToSection('hero')}
-                whileHover={{ scale: 1.1, y: -2 }}
-                whileTap={{ scale: 0.9 }}
-                className="group relative w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                <ArrowUp className="w-5 h-5 text-white group-hover:animate-bounce" />
-                <div className="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-20 animate-pulse"></div>
-              </motion.button>
             </div>
           </div>
         </div>
       </footer>
+      <AnimatePresence>
+        {showScrollTop && (
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            whileHover={{ scale: 1.1, y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={() => scrollToSection('hero')}
+            className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            <ArrowUp className="w-5 h-5 text-primary-foreground" />
+          </motion.button>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
