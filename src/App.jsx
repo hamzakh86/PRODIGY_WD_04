@@ -408,7 +408,7 @@ const technologies = [
       name: "Hazem Khaled",
       role: "Student at FSEG Nabeul",
       content: "I am very grateful for the valuable support I received during my internship project. The guidance provided was not only technically precise but also patient and encouraging. This experience helped me overcome challenges with confidence and achieve better results. I highly recommend him to anyone looking for a skilled and reliable web developer.",
-      image: "/hazem-profile.jpeg"
+      image: "/hazem-profile.webp"
     },
   ];
 
