@@ -37,9 +37,17 @@ import certification3 from './assets/certification3.png';
 import certification4 from './assets/certification4.png';
 import certification5 from './assets/certification5.png';
 import certification6 from './assets/certification6.png';
-import certification7 from './assets/certification7.png';
 import certification8 from './assets/certification8.png';
 import certification9 from './assets/certification9.png';
+import wordpress from './assets/wordpress.png';
+
+import dataanalysiswithpythoncertificate from './assets/dataanalysiswithpythoncertificate.png';
+import devopsprerequisite from './assets/devopsprerequisite.png';
+import dockerforabsolutebeginners from './assets/dockerforabsolutebeginners.png';
+import kubermetesforabsolutebeginnerscertificate from './assets/kubermetesforabsolutebeginnerscertificate.png';
+import linuxforabsolutebeginners from './assets/linuxforabsolutebeginners.png';
+import machinelearningwithpython from './assets/machinelearningwithpython.png';
+import scientificcomputingwithpython from './assets/scientificcomputingwithpython.png';
 import codealphaLogo from './assets/codealpha-logo.png';
 import prodigyLogo from './assets/prodigy-logo.png';
 import celestialLogo from './assets/celestial-logo.jpeg';
@@ -125,21 +133,27 @@ const App = () => {
     }
   ];
 
-  const technologies = [
-    { name: "HTML 5", icon: htmlLogo, color: "from-orange-500 to-red-500" },
-    { name: "CSS 3", icon: cssLogo, color: "from-blue-500 to-cyan-500" },
-    { name: "JavaScript", icon: jsLogo, color: "from-yellow-400 to-orange-500" },
-    { name: "TypeScript", icon: typescriptLogo, color: "from-blue-600 to-blue-400" },
-    { name: "React JS", icon: reactLogo, color: "from-cyan-400 to-blue-500" },
-    { name: "Redux Toolkit", icon: reduxLogo, color: "from-purple-500 to-pink-500" },
-    { name: "Tailwind CSS", icon: tailwindLogo, color: "from-cyan-400 to-teal-500" },
-    { name: "Node JS", icon: nodejsLogo, color: "from-green-500 to-emerald-500" },
-    { name: "MongoDB", icon: mongodbLogo, color: "from-green-600 to-green-400" },
-    { name: "Three JS", icon: threejsLogo, color: "from-gray-600 to-gray-400" },
-    { name: "Git", icon: gitLogo, color: "from-orange-600 to-red-500" },
-    { name: "Next.js", icon: nextLogo, color: "from-gray-800 to-gray-600" },
-    { name: "Nest.js", icon: nestLogo, color: "from-red-600 to-pink-500" }
-  ];
+  
+          
+
+const technologies = [
+  { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", color: "from-orange-500 to-red-500" },
+  { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", color: "from-blue-500 to-cyan-500" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", color: "from-yellow-400 to-orange-500" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", color: "from-blue-600 to-blue-400" },
+  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", color: "from-cyan-400 to-blue-500" },
+  { name: "Redux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg", color: "from-purple-500 to-pink-500" },
+  { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", color: "from-cyan-400 to-teal-500" },
+  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", color: "from-green-500 to-emerald-500" },
+  { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", color: "from-green-600 to-green-400" },
+  { name: "Three.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg", color: "from-gray-600 to-gray-400" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", color: "from-orange-600 to-red-500" },
+  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", color: "from-gray-800 to-gray-600" },
+  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", color: "from-gray-800 to-gray-600" },
+  { name: "NestJS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg", color: "from-red-600 to-pink-500" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", color: "from-blue-600 to-yellow-500" },
+
+];
   const experiences = [
     {
       title: "Full Stack Development Intern",
@@ -266,36 +280,94 @@ const App = () => {
       link: "https://diploma.gomycode.app/?id=31705411332830853",
       image: certification1
     },
-        {
+            {
+      title: "freeCodeCamp",
+      description: "Front End Development Libraries",
+      link: "https://www.freecodecamp.org/certification/hamzakh06082000/front-end-development-libraries",
+      image: certification4
+    },
+
+            {
       title: "freeCodeCamp",
       description: "Back End Development and APIs",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
       image: certification5
     },
-        {
+          {
       title: "Postman",
       description: "Postman API Fundamentals Student Expert",
       link: "https://badgr.com/print-certificate/66a41b7a1ea7d93715e019af",
       image: certification6
     },
-    {
-      title: "freeCodeCamp",
-      description: "Responsive Web Design",
-      link: "https://www.freecodecamp.org/certification/hamzakh06082000/responsive-web-design",
-      image: certification2
+
+           {
+      title: "KodeKloud",
+      description: "DevOps Prerequisite Course",
+      link: "https://learn.kodekloud.com/certificate/4763e3e8-653e-43f7-b9d4-e714a10b11b1",
+      image: devopsprerequisite
     },
+           {
+      title: "KodeKloud",
+      description: "Docker For Absolute Beginners",
+      link: "https://learn.kodekloud.com/certificate/f8f9a88a-8a2c-403e-b371-775f140c1bfc",
+      image: dockerforabsolutebeginners
+    },
+           {
+      title: "KodeKloud",
+      description: "Linux For Absolute Beginners",
+      link: "https://learn.kodekloud.com/certificate/cba3757a-6510-4bae-93cb-a218f5be7d55",
+      image: linuxforabsolutebeginners
+    },
+       {
+      title: "KodeKloud",
+      description: "Kubernetes For Absolute Beginners",
+      link: "https://learn.kodekloud.com/certificate/98212e05-54d8-4e41-9b43-12e5f9fefcb7",
+      image: kubermetesforabsolutebeginnerscertificate
+    },
+         {
+      title: "freeCodeCamp",
+      description: "Machine Learning with Python",
+      link: "https://freecodecamp.org/certification/hamzakh06082000/machine-learning-with-python-v7",
+      image: machinelearningwithpython
+    },
+
+       {
+      title: "freeCodeCamp",
+      description: "Data Analysis with Python",
+      link: "https://freecodecamp.org/certification/hamzakh06082000/data-analysis-with-python-v7",
+      image: dataanalysiswithpythoncertificate
+    },
+
+       {
+      title: "freeCodeCamp",
+      description: "Scientific Computing with Python",
+      link: "https://freecodecamp.org/certification/hamzakh06082000/scientific-computing-with-python-v7",
+      image: scientificcomputingwithpython
+    },
+    
+
+  
+
     {
       title: "freeCodeCamp",
       description: "JavaScript Algorithms and Data Structures (Beta)",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/javascript-algorithms-and-data-structures-v8",
       image: certification3
     },
-    {
+        {
       title: "freeCodeCamp",
-      description: "Front End Development Libraries",
-      link: "https://www.freecodecamp.org/certification/hamzakh06082000/front-end-development-libraries",
-      image: certification4
+      description: "Responsive Web Design",
+      link: "https://www.freecodecamp.org/certification/hamzakh06082000/responsive-web-design",
+      image: certification2
     },
+    
+          {
+      title: "Coursera",
+      description: "Website with WordPress",
+      link: "https://www.coursera.org/account/accomplishments/records/N2F712XKEWW4",
+      image: wordpress
+    },
+
     {
     title: "SCRUMstudy",
     description: "Scrum for Ops and DevOps Fundamentals",
@@ -307,12 +379,10 @@ const App = () => {
       description: "Scrum Fundamentals Certified (SFC)",
       link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1036406",
       image: certification9
-    },
-   {
-    title: "Certifprof",
-    description: "Scrum Foundation Professional Certificate SFPC (v2020)",
-    image: certification7
     }
+
+
+
   ];
 
   const testimonials = [
@@ -333,7 +403,13 @@ const App = () => {
       role: "Intern at CWD",
       content: "I've had the pleasure of working alongside Hamza on several projects and I can confidently say that he is an exceptional developer. His ability to solve complex problems with clean efficient code paired with a strong sense of design and user experience truly sets him apart. Whether it's creating robust backend systems building dynamic user interfaces or Hamza consistently delivers high-quality work. His passion for technology and continuous learning is evident in every project he tackles. I highly recommend Hamza to anyone seeking a dedicated and skilled developer.",
       image: "/sarah-profile.webp"
-    }
+    },
+    {
+      name: "Hazem Khaled",
+      role: "Student at FSEG Nabeul",
+      content: "I am very grateful for the valuable support I received during my internship project. The guidance provided was not only technically precise but also patient and encouraging. This experience helped me overcome challenges with confidence and achieve better results. I highly recommend him to anyone looking for a skilled and reliable web developer.",
+      image: "/hazem-profile.jpeg"
+    },
   ];
 
   useEffect(() => {
@@ -478,7 +554,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <div className="flex justify-between items-center h-16">
             <motion.div
               className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
@@ -565,7 +641,7 @@ const App = () => {
       </nav>
 
       <section id="hero" className="min-h-screen flex items-center justify-center pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -661,7 +737,7 @@ const App = () => {
       </section>
 
       <section id="about" className="py-32 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -710,7 +786,7 @@ const App = () => {
       </section>
 
       <section id="experience" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -796,11 +872,11 @@ const App = () => {
                     className={`relative flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
                   >
                     {/* Timeline dot */}
-                    <div className="absolute left-1/2 top-6 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-primary/10">
+                    <div className="absolute left-1/2 top-2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-primary/10">
                       <div className="h-3 w-3 rounded-full bg-primary"></div>
                     </div>
 
-                    <Card className={`w-full max-w-lg ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}>
+                    <Card className={`w-full max-w-2xl ${index % 2 === 0 ? 'mr-auto' : 'ml-auto'}`}>
                       <div className="flex items-center gap-4 p-6 pb-4">
                         <img
                           src={exp.logo}
@@ -836,13 +912,13 @@ const App = () => {
         </div>
       </section>
 
-      <section id="technologies" className="py-20 bg-gradient-to-br from-background via-card to-background relative overflow-hidden overflow-x-hidden">
+<section id="technologies" className="py-20 bg-gradient-to-br from-background via-card to-background relative overflow-hidden">
   {/* Background Effects */}
   <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
   <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
   <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
 
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+  <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4 relative z-10">
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -856,119 +932,42 @@ const App = () => {
       <p className="text-lg text-muted-foreground">Technologies I work with</p>
     </motion.div>
 
-    {/* Desktop Grid Layout */}
-    <div className="hidden md:grid grid-cols-6 lg:grid-cols-8 gap-6 mb-12">
+    {/* Technologies Grid */}
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 justify-items-center">
       {technologies.map((tech, index) => (
         <motion.div
           key={tech.name}
-          initial={{ opacity: 0, scale: 0.5, rotateY: 180 }}
-          whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.8,
-            delay: index * 0.1,
+            delay: index * 0.05,
             type: "spring",
             stiffness: 100
           }}
           viewport={{ once: true }}
           whileHover={{
             scale: 1.1,
-            rotateY: 15,
             z: 50
           }}
-          className="group relative"
+          className="group relative flex flex-col items-center"
         >
-          <div className={`relative w-16 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
+          <div className={`relative w-14 h-14 md:w-16 md:h-16 mx-auto mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
             <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
               <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20 group-hover:opacity-40 transition-opacity duration-300`}></div>
-              <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
-              {tech.icon ? (
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-8 h-8 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
-                />
-              ) : (
-                <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-sm relative z-10`}>
-                  {tech.name.charAt(0)}
-                </div>
-              )}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {[...Array(6)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className={`absolute w-1 h-1 bg-gradient-to-r ${tech.color} rounded-full`}
-                    style={{
-                      left: `${20 + i * 10}%`,
-                      top: `${20 + i * 10}%`,
-                    }}
-                    animate={{
-                      scale: [0, 1, 0],
-                      opacity: [0, 1, 0],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      delay: i * 0.2,
-                    }}
-                  />
-                ))}
-              </div>
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                className="w-8 h-8 md:w-10 md:h-10 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
           </div>
 
-          <motion.h3
-            className="text-xs font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-          >
+          <h3 className="text-xs font-medium text-center text-foreground group-hover:text-primary transition-colors duration-300">
             {tech.name}
-          </motion.h3>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileHover={{ opacity: 1, y: 0 }}
-            className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-foreground text-background px-3 py-1 rounded-lg text-xs font-medium whitespace-nowrap pointer-events-none"
-          >
-            {tech.name}
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-foreground"></div>
-          </motion.div>
+          </h3>
         </motion.div>
       ))}
-    </div>
-
-    {/* Mobile Grid Layout */}
-    <div className="md:hidden px-4">
-      <div className="grid grid-cols-4 gap-4 justify-items-center">
-        {technologies.map((tech, index) => (
-          <motion.div
-            key={tech.name}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
-            viewport={{ once: true }}
-            className="group"
-          >
-            <div className={`relative w-16 h-16 mb-2 rounded-xl bg-gradient-to-br ${tech.color} p-0.5 shadow-lg`}>
-              <div className="w-full h-full bg-background/90 backdrop-blur-sm rounded-xl flex items-center justify-center relative overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-20`}></div>
-                {tech.icon ? (
-                  <img
-                    src={tech.icon}
-                    alt={tech.name}
-                    className="w-8 h-8 object-contain relative z-10"
-                  />
-                ) : (
-                  <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${tech.color} flex items-center justify-center text-white font-bold text-xs relative z-10`}>
-                    {tech.name.charAt(0)}
-                  </div>
-                )}
-              </div>
-            </div>
-            <h3 className="text-xs font-medium text-center text-foreground w-16">
-              {tech.name}
-            </h3>
-          </motion.div>
-        ))}
-      </div>
     </div>
 
     {/* Floating Animation Elements */}
@@ -998,7 +997,7 @@ const App = () => {
 
 
       <section id="projects" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1089,7 +1088,7 @@ const App = () => {
       </section>
 
       <section id="certifications" className="py-20 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1112,7 +1111,7 @@ const App = () => {
               >
                 <Card className="h-full hover:shadow-lg transition-shadow">
                   {cert.image && (
-                    <div className="w-full h-64 overflow-hidden rounded-t-lg bg-white flex items-center justify-center ">
+                    <div className="w-full h-auto overflow-hidden rounded-t-lg bg-white flex items-center justify-center ">
                       <img
                         src={cert.image}
                         alt={cert.title}
@@ -1160,7 +1159,7 @@ const App = () => {
       </section>
 
       <section id="testimonials" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1223,190 +1222,206 @@ const App = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-lg text-muted-foreground">
-              Have a project in mind? Don't hesitate to contact me!
-            </p>
-          </motion.div>
+    <section id="contact" className="py-20 bg-card">
+  <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4">Get In Touch</h2>
+      <p className="text-lg text-muted-foreground">
+        Have a project in mind? Don't hesitate to contact me!
+      </p>
+    </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardHeader>
-                  <CardTitle>Send me a message</CardTitle>
-                  <CardDescription>
-                    I'll get back to you as soon as possible
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <form onSubmit={handleContactSubmit}>
-                    <div className="space-y-4">
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">Name</label>
-                        <Input
-                          name="name"
-                          value={contactForm.name}
-                          onChange={handleContactFormChange}
-                          placeholder="Your name"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">Email</label>
-                        <Input
-                          type="email"
-                          name="email"
-                          value={contactForm.email}
-                          onChange={handleContactFormChange}
-                          placeholder="your@email.com"
-                          required
-                        />
-                      </div>
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">Message</label>
-                        <Textarea
-                          name="message"
-                          value={contactForm.message}
-                          onChange={handleContactFormChange}
-                          placeholder="Your message..."
-                          rows={5}
-                          required
-                        />
-                      </div>
-                      <Button type="submit" className="w-full" disabled={isSubmitting}>
-                        <Mail className="w-4 h-4 mr-2" />
-                        {isSubmitting ? 'Sending...' : 'Send Message'}
-                      </Button>
-                      {submitStatus === 'success' && (
-                        <p className="text-green-600 text-sm">Message sent successfully!</p>
-                      )}
-                      {submitStatus === 'error' && (
-                        <p className="text-red-600 text-sm">Failed to send message. Please try again.</p>
-                      )}
-                    </div>
-                  </form>
-                </CardContent>
-              </Card>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="space-y-8"
-            >
-              {/* Email Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-foreground">Email me at</h3>
-                <div className="flex items-center space-x-3">
-                  <p className="text-base font-medium text-foreground">khaledhamza251785@gmail.com</p>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => copyToClipboard('khaledhamza251785@gmail.com')}
-                    className="hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2"
-                  >
-                    <Copy className="w-4 h-4" />
-                  </Button>
-                </div>
-                {emailCopied && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="text-sm text-green-600 font-medium"
-                  >
-                    E-mail Copié ✓
-                  </motion.div>
-                )}
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8">
+      {/* Formulaire de contact - Largeur réduite */}
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <Card className="h-full">
+          <CardHeader>
+            <CardTitle>Send me a message</CardTitle>
+            <CardDescription>
+              I'll get back to you as soon as possible
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form onSubmit={handleContactSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <label htmlFor="name" className="text-sm font-medium">
+                  Name
+                </label>
+                <Input
+                  id="name"
+                  name="name"
+                  value={contactForm.name}
+                  onChange={handleContactFormChange}
+                  placeholder="Your name"
+                  required
+                />
               </div>
-
-              {/* Socials Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-foreground">Socials</h3>
-                <div className="flex items-center space-x-4">
-                  {/* GitHub */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://github.com/hamzakh86', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Github className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* LinkedIn */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.linkedin.com/in/hamza-khaled-16a114290/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Linkedin className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* Instagram */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.instagram.com/hamzakhaledofficial86/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Instagram className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* Facebook */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://www.facebook.com/hamzakhaledofficial86/', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Facebook className="w-6 h-6 text-primary" />
-                  </motion.button>
-
-                  {/* WhatsApp */}
-                  <motion.button
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => window.open('https://wa.me/21625178855', '_blank')}
-                    className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary/20 transition-colors duration-200"
-                  >
-                    <Phone className="w-6 h-6 text-primary" />
-                  </motion.button>
-                </div>
+              
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email
+                </label>
+                <Input
+                  id="email"
+                  type="email"
+                  name="email"
+                  value={contactForm.email}
+                  onChange={handleContactFormChange}
+                  placeholder="your@email.com"
+                  required
+                />
               </div>
-
-              {/* Location Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Location</h3>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-gray-500 dark:text-gray-400" />
-                  <p className="text-lg text-gray-900 dark:text-white">Tunisia 🇹🇳</p>
-                </div>
+              
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-sm font-medium">
+                  Message
+                </label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  value={contactForm.message}
+                  onChange={handleContactFormChange}
+                  placeholder="Your message..."
+                  rows={5}
+                  required
+                />
               </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+              
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Mail className="w-4 h-4 mr-2" />
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </Button>
+              
+              {submitStatus === 'success' && (
+                <p className="text-green-600 text-sm mt-2">Message sent successfully!</p>
+              )}
+              {submitStatus === 'error' && (
+                <p className="text-red-600 text-sm mt-2">Failed to send message. Please try again.</p>
+              )}
+            </form>
+          </CardContent>
+        </Card>
+      </motion.div>
+
+      {/* Informations de contact - Grille pour aligner les sections */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+      >
+        {/* Email Section */}
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg flex items-center">
+              <Mail className="w-5 h-5 mr-2" />
+              Email me at
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center justify-between">
+              <p className="text-sm text-muted-foreground">khaledhamza251785@gmail.com</p>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => copyToClipboard('khaledhamza251785@gmail.com')}
+                className="h-8 w-8 p-0"
+              >
+                <Copy className="w-4 h-4" />
+              </Button>
+            </div>
+            {emailCopied && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-xs text-green-600 mt-2"
+              >
+                Email copied to clipboard!
+              </motion.div>
+            )}
+          </CardContent>
+        </Card>
+
+        {/* Socials Section */}
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg flex items-center">
+              <MessageSquare className="w-5 h-5 mr-2" />
+              Socials
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap gap-2">
+              {[
+                { icon: Github, url: 'https://github.com/hamzakh86', label: 'GitHub' },
+                { icon: Linkedin, url: 'https://www.linkedin.com/in/hamza-khaled-16a114290/', label: 'LinkedIn' },
+                { icon: Instagram, url: 'https://www.instagram.com/hamzakhaledofficial86/', label: 'Instagram' },
+                { icon: Facebook, url: 'https://www.facebook.com/hamzakhaledofficial86/', label: 'Facebook' },
+                { icon: Phone, url: 'https://wa.me/21625178855', label: 'WhatsApp' },
+              ].map((social, index) => (
+                <motion.button
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open(social.url, '_blank')}
+                  className="w-10 h-10 bg-accent rounded-md flex items-center justify-center hover:bg-accent/80 transition-colors"
+                  aria-label={social.label}
+                >
+                  <social.icon className="w-5 h-5" />
+                </motion.button>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Location Section */}
+        <Card className="md:col-span-2">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg flex items-center">
+              <MapPin className="w-5 h-5 mr-2" />
+              Location
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <MapPin className="w-5 h-5 text-primary" />
+              <p className="text-muted-foreground">Sousse, Tunisia</p>
+            </div>
+            
+            {/* Map Section */}
+            <div className="w-full h-48 rounded-lg overflow-hidden border border-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102834.57537117855!2d10.566667!3d35.825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8a7ca7d7b0d7%3A0x8a7ca7d7b0d7b0d7!2sSousse%2C%20Tunisia!5e0!3m2!1sen!2s!4v1640000000000!5m2!1sen!2s"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Sousse, Tunisia Location"
+              ></iframe>
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       <footer className="bg-background/80 backdrop-blur-md border-t border-border text-foreground py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-2 sm:px-3 lg:px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Logo and description */}
             <div className="space-y-4">
