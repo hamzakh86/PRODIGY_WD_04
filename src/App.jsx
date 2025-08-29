@@ -23,7 +23,13 @@ import {
   Facebook,
   Instagram,
   Phone,
-  ArrowUp
+  ArrowUp,
+  Globe,
+  Smartphone,
+  Brain,
+  Settings,
+  Palette,
+  Lightbulb
 } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
@@ -71,6 +77,7 @@ import nextLogo from './assets/next.webp';
 import nestLogo from './assets/nest.webp';
 
 import './App.css';
+import { Database } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -133,9 +140,6 @@ const App = () => {
     }
   ];
 
-  
-          
-
 const technologies = [
   { name: "HTML5", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", color: "from-orange-500 to-red-500" },
   { name: "CSS3", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", color: "from-blue-500 to-cyan-500" },
@@ -154,6 +158,7 @@ const technologies = [
   { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", color: "from-blue-600 to-yellow-500" },
 
 ];
+
   const experiences = [
     {
       title: "Full Stack Development Intern",
@@ -207,71 +212,71 @@ const technologies = [
   ];
 
   const projects = [
-  {
-    name: "E-Commerce Website",
-    description: "Complete e-commerce platform with admin dashboard, PayPal payment system, and product management. Features secure authentication and advanced search functionality.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
-    github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
-    demo: "https://ecommerce-demo-hamza.netlify.app",
-    image: "/project1.png"
-  },
-  {
-    name: "Project Management Website (TeamSpace)",
-    description: "Trello-inspired task management application with real-time collaboration features. Allows creation of customizable workspaces and deadline tracking.",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
-    github: "https://github.com/hamzakh86/codealpha-teamspace",
-    demo: "https://teamspace-demo.netlify.app",
-    image: "/project2.png"
-  },
-  {
-    name: "Social Media Website (SocialWave)",
-    description: "Complete social network with posts, comments, and likes system. Features user following functionality and content moderation tools.",
-    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
-    github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
-    demo: "https://socialwave-demo.herokuapp.com",
-    image: "/project3.png"
-  },
-  {
-    name: "Modern Real Estate Marketplace",
-    description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
-    technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
-    github: "https://github.com/hamzakh86/A-modern-real-estate-",
-    demo: "https://hamza-estate.onrender.com",
-    image: "/project4.png"
-  },
-  {
-    name: "Portfolio Website",
-    description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
-    technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_04",
-    demo: "https://hamza-khaled.netlify.app",
-    image: "/project5.png"
-  },
-  {
-    name: "Responsive Landing Page (AI Revolution)",
-    description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
-    technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_01",
-    demo: "https://ia-revolution.netlify.app",
-    image: "/project6.png"
-  },
-  {
-    name: "Stopwatch Web Application (Chrono Elite Pro)",
-    description: "Professional stopwatch with lap system, advanced statistics, and CSV export. Supports keyboard shortcuts and hundredth-second precision.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_02",
-    demo: "https://chrono-elite-pro.netlify.app",
-    image: "/project7.png"
-  },
-  {
-    name: "Tic-Tac-Toe Web Application",
-    description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
-    technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
-    github: "https://github.com/hamzakh86/PRODIGY_WD_03",
-    demo: "https://game-tic-tac-toeh.netlify.app",
-    image: "/project8.png"
-  },
-];
+    {
+      name: "E-Commerce Website",
+      description: "Complete e-commerce platform with admin dashboard, PayPal payment system, and product management. Features secure authentication and advanced search functionality.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "PayPal API"],
+      github: "https://github.com/hamzakh86/codealpha-s-ecommerce",
+      demo: "https://ecommerce-demo-hamza.netlify.app",
+      image: "/project1.png"
+    },
+    {
+      name: "Project Management Website (TeamSpace)",
+      description: "Trello-inspired task management application with real-time collaboration features. Allows creation of customizable workspaces and deadline tracking.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "WebSockets"],
+      github: "https://github.com/hamzakh86/codealpha-teamspace",
+      demo: "https://teamspace-demo.netlify.app",
+      image: "/project2.png"
+    },
+    {
+      name: "Social Media Website (SocialWave)",
+      description: "Complete social network with posts, comments, and likes system. Features user following functionality and content moderation tools.",
+      technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Mongoose"],
+      github: "https://github.com/hamzakh86/codeAlpha-SocialWave",
+      demo: "https://socialwave-demo.herokuapp.com",
+      image: "/project3.png"
+    },
+    {
+      name: "Modern Real Estate Marketplace",
+      description: "Real estate marketplace with CRUD property management, image upload, and advanced search. Secured with JWT and optimized with Redux Toolkit.",
+      technologies: ["MERN Stack", "JWT", "Redux Toolkit", "Cloudinary"],
+      github: "https://github.com/hamzakh86/A-modern-real-estate-",
+      demo: "https://hamza-estate.onrender.com",
+      image: "/project4.png"
+    },
+    {
+      name: "Portfolio Website",
+      description: "Modern portfolio with interactive animations using Three.js and Framer Motion. Responsive design optimized for all screen sizes with functional contact form.",
+      technologies: ["React", "Three.js", "Framer Motion", "Tailwind CSS", "EmailJS"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_04",
+      demo: "https://hamza-khaled.netlify.app",
+      image: "/project5.png"
+    },
+    {
+      name: "Responsive Landing Page (AI Revolution)",
+      description: "Professional homepage for an AI platform with interactive data visualizations. Responsive design with theme switching and smooth animations.",
+      technologies: ["React", "Tailwind CSS", "Framer Motion", "Recharts"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_01",
+      demo: "https://ia-revolution.netlify.app",
+      image: "/project6.png"
+    },
+    {
+      name: "Stopwatch Web Application (Chrono Elite Pro)",
+      description: "Professional stopwatch with lap system, advanced statistics, and CSV export. Supports keyboard shortcuts and hundredth-second precision.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_02",
+      demo: "https://chrono-elite-pro.netlify.app",
+      image: "/project7.png"
+    },
+    {
+      name: "Tic-Tac-Toe Web Application",
+      description: "Interactive Tic-Tac-Toe game with AI at multiple difficulty levels. Features game statistics tracking and responsive UI.",
+      technologies: ["React", "Vite", "Tailwind CSS", "Shadcn/ui"],
+      github: "https://github.com/hamzakh86/PRODIGY_WD_03",
+      demo: "https://game-tic-tac-toeh.netlify.app",
+      image: "/project8.png"
+    },
+  ];
 
   const certifications = [
     {
@@ -280,109 +285,96 @@ const technologies = [
       link: "https://diploma.gomycode.app/?id=31705411332830853",
       image: certification1
     },
-            {
+    {
       title: "freeCodeCamp",
       description: "Front End Development Libraries",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/front-end-development-libraries",
       image: certification4
     },
-
-            {
+    {
       title: "freeCodeCamp",
       description: "Back End Development and APIs",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/back-end-development-and-apis",
       image: certification5
     },
-          {
+    {
       title: "Postman",
       description: "Postman API Fundamentals Student Expert",
       link: "https://badgr.com/print-certificate/66a41b7a1ea7d93715e019af",
       image: certification6
     },
-
-           {
+    {
       title: "KodeKloud",
       description: "DevOps Prerequisite Course",
       link: "https://learn.kodekloud.com/certificate/4763e3e8-653e-43f7-b9d4-e714a10b11b1",
       image: devopsprerequisite
     },
-           {
+    {
       title: "KodeKloud",
       description: "Docker For Absolute Beginners",
       link: "https://learn.kodekloud.com/certificate/f8f9a88a-8a2c-403e-b371-775f140c1bfc",
       image: dockerforabsolutebeginners
     },
-           {
+    {
       title: "KodeKloud",
       description: "Linux For Absolute Beginners",
       link: "https://learn.kodekloud.com/certificate/cba3757a-6510-4bae-93cb-a218f5be7d55",
       image: linuxforabsolutebeginners
     },
-       {
+    {
       title: "KodeKloud",
       description: "Kubernetes For Absolute Beginners",
       link: "https://learn.kodekloud.com/certificate/98212e05-54d8-4e41-9b43-12e5f9fefcb7",
       image: kubermetesforabsolutebeginnerscertificate
     },
-         {
+    {
       title: "freeCodeCamp",
       description: "Machine Learning with Python",
       link: "https://freecodecamp.org/certification/hamzakh06082000/machine-learning-with-python-v7",
       image: machinelearningwithpython
     },
-
-       {
+    {
       title: "freeCodeCamp",
       description: "Data Analysis with Python",
       link: "https://freecodecamp.org/certification/hamzakh06082000/data-analysis-with-python-v7",
       image: dataanalysiswithpythoncertificate
     },
-
-       {
+    {
       title: "freeCodeCamp",
       description: "Scientific Computing with Python",
       link: "https://freecodecamp.org/certification/hamzakh06082000/scientific-computing-with-python-v7",
       image: scientificcomputingwithpython
     },
-    
-
-  
-
     {
       title: "freeCodeCamp",
       description: "JavaScript Algorithms and Data Structures (Beta)",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/javascript-algorithms-and-data-structures-v8",
       image: certification3
     },
-        {
+    {
       title: "freeCodeCamp",
       description: "Responsive Web Design",
       link: "https://www.freecodecamp.org/certification/hamzakh06082000/responsive-web-design",
       image: certification2
     },
-    
-          {
+    {
       title: "Coursera",
       description: "Website with WordPress",
       link: "https://www.coursera.org/account/accomplishments/records/N2F712XKEWW4",
       image: wordpress
     },
-
     {
-    title: "SCRUMstudy",
-    description: "Scrum for Ops and DevOps Fundamentals",
-    link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
-    image: certification8
+      title: "SCRUMstudy",
+      description: "Scrum for Ops and DevOps Fundamentals",
+      link: "https://www.scrumstudy.com/certification/verify?type=SODFC&number=1011595",
+      image: certification8
     },
-   {
+    {
       title: "SCRUMstudy",
       description: "Scrum Fundamentals Certified (SFC)",
       link: "https://www.scrumstudy.com/certification/verify?type=SFC&number=1036406",
       image: certification9
     }
-
-
-
   ];
 
   const testimonials = [
@@ -469,15 +461,12 @@ const technologies = [
   };
 
   const downloadCV = (language = 'english') => {
-    const link = document.createElement('a');
+    // Ouvrir le CV dans un nouvel onglet au lieu de le télécharger directement
     if (language === 'french') {
-      link.href = '/cv/Hamza_Khaled_CV_French.pdf';
-      link.download = 'Hamza_Khaled_CV_French.pdf';
+      window.open('/cv/Hamza_Khaled_CV_French.pdf', '_blank');
     } else {
-      link.href = '/cv/Hamza_Khaled_CV_English.pdf';
-      link.download = 'Hamza_Khaled_CV_English.pdf';
+      window.open('/cv/Hamza_Khaled_CV_English.pdf', '_blank');
     }
-    link.click();
     setShowCVOptions(false);
   };
 
@@ -683,7 +672,7 @@ const technologies = [
                     className="w-full sm:w-auto"
                   >
                     <Download className="mr-2 h-4 w-4" />
-                    Download CV
+                    View CV
                     <ChevronDown className="ml-2 h-4 w-4" />
                   </Button>
                   <AnimatePresence>
@@ -732,8 +721,6 @@ const technologies = [
             </motion.div>
           </div>
         </div>
-
-
       </section>
 
       <section id="about" className="py-32 bg-card">
@@ -994,6 +981,7 @@ const technologies = [
     </div>
   </div>
 </section>
+
 
 
       <section id="projects" className="py-20">
